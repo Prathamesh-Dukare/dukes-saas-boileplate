@@ -15,8 +15,8 @@ export default function Home() {
         title={'Catch Attention'}
         subtitle={
           <>
-            With <span className='bg-green-300 px-2 rounded'>Next.js</span> and{' '}
-            <span className='bg-green-300 px-2 rounded'>Tailwind CSS</span>
+            With <span className='bg-green-400 px-2 rounded'>Next.js</span> and{' '}
+            <span className='bg-green-400 px-2 rounded'>Tailwind CSS</span>
           </>
         }
         description={
