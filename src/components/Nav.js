@@ -7,12 +7,13 @@ import CTA from './UI/CTA';
 export default function Nav() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
-    <header className='shadow-sm'>
+    <header className='border-b border-gray-100'>
       <div className='px-4 mx-auto sm:px-6 lg:px-8'>
-        <div className='flex items-center justify-between h-16 lg:h-20'>
+        <div className='flex items-center justify-between h-12 lg:h-16'>
           <div className='flex-shrink-0'>
-            <Link href='/' className='flex'>
-              <img className='w-auto h-12' src='/logo.png' alt='Logo' />
+            <Link href='/' className='flex items-center justify-center gap-1'>
+              <img className='w-auto h-8' src='/logo.png' alt='Logo' />
+              <span className='font-bold'>SAAS Starter</span>
             </Link>
           </div>
 
@@ -20,7 +21,7 @@ export default function Nav() {
             title='toggle menu'
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             type='button'
-            className='inline-flex p-1 rounded text-gray-900 transition-all duration-200 border border-gray-900 lg:hidden focus:bg-gray-100 hover:bg-gray-100'
+            className='inline-flex p-1 rounded-md text-gray-900 transition-all duration-200 border border-gray-900 lg:hidden focus:bg-gray-100 hover:bg-gray-100'
           >
             {!isMenuOpen ? (
               <svg

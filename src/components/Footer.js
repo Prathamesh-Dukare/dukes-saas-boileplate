@@ -99,7 +99,7 @@ export default function Footer() {
 
         <div className='flex flex-wrap items-center justify-between'>
           <img
-            className='h-12 rounded bg-white p-2 auto md:order-1'
+            className='h-12 rounded-md bg-white p-2 auto md:order-1'
             src='/logo.png'
             alt='Logo'
           />
