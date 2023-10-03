@@ -7,7 +7,7 @@ import CTA from './UI/CTA';
 export default function Nav() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
-    <header className=''>
+    <header className='shadow-sm'>
       <div className='px-4 mx-auto sm:px-6 lg:px-8'>
         <div className='flex items-center justify-between h-16 lg:h-20'>
           <div className='flex-shrink-0'>

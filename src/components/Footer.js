@@ -70,7 +70,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <p className='text-base text-gray-100'>Extra Links</p>
+            <p className='text-base text-gray-100'>Legal</p>
 
             <ul className='mt-8 space-y-4'>
               <li>
