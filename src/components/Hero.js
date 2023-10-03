@@ -24,7 +24,7 @@ export default function Hero({
             {preText}
           </p>
           <h1
-            className={`text-4xl font-bold sm:text-6xl lg:text-7xl  ${
+            className={`text-4xl font-bold sm:text-7xl lg:text-8xl  ${
               theme === 'light'
                 ? 'text-white text-shadow shadow-gray-900'
                 : 'text-gray-900'
