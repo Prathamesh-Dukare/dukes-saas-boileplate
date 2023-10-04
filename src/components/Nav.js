@@ -102,7 +102,7 @@ export default function Nav({
         </div>
 
         {isMenuOpen && (
-          <div className='flex flex-col items-center justify-center space-y-4 mb-2'>
+          <div className='flex flex-col items-center justify-center space-y-4 pb-2'>
             <Link
               href='/subscribe'
               title='Software Development Services Subscription'
