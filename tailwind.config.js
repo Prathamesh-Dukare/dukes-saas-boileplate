@@ -35,9 +35,6 @@ module.exports = {
           950: '#131b13',
         },
       },
-      backgroundImage: {
-        awesome_pattern: `url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='60' height='59.5' patternTransform='scale(1) rotate(45)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(0,0%,100%,1)'/><path d='M11 6a5 5 0 01-5 5 5 5 0 01-5-5 5 5 0 015-5 5 5 0 015 5' transform='translate(10,0)' stroke-width='1' stroke='none' fill='hsla(122, 25%, 97%, 1)'/></pattern></defs><rect width='800%' height='800%' transform='translate(-80,0)' fill='url(%23a)'/></svg>")`,
-      },
     },
   },
   plugins: [],

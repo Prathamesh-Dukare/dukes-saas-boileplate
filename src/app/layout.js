@@ -18,9 +18,7 @@ export default function RootLayout({ children }) {
     <html lang='en'>
       <body className={spaceGrotesk.className}>
         <Nav />
-        <main className='relative min-h-[20vh] py-4 sm:py-6 xl:py-12'>
-          {children}
-        </main>
+        <main>{children}</main>
         <Footer />
       </body>
     </html>
