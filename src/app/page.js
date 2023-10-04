@@ -4,19 +4,20 @@ import Hero from '@/components/Hero';
 export default function Home() {
   return (
     <>
-      <Background className={'bg-slate-50 bg-awesome_pattern'} />
+      <Background className={'bg-neutral-50'} />
       <Hero
         preText={
           <>
-            1000+ <span className='text-green-400'>Happy Customers</span>
+            <span className='font-bold'>1000+</span>{' '}
+            <span className='text-green-700'>Happy Customers</span>
           </>
         }
         theme='dark'
-        title={'Catch Attention'}
+        title={'Deliver Excellence'}
         subtitle={
           <>
-            With <span className='bg-green-400 px-2 rounded'>Next.js</span> and{' '}
-            <span className='bg-green-400 px-2 rounded'>Tailwind CSS</span>
+            for your Customers with{' '}
+            <span className='bg-green-400 px-2 rounded'>Next.js</span>
           </>
         }
         description={
@@ -28,7 +29,8 @@ export default function Home() {
           </>
         }
         ctaButtonClassName='px-8 py-4'
-        ctaText='Buy Now'
+        ctaText='Sign up for free'
+        productImage={'/hero.png'}
       />
     </>
   );

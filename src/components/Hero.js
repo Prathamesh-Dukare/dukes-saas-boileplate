@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import CTA from './UI/CTA';
 
 export default function Hero({
@@ -9,13 +10,14 @@ export default function Hero({
   theme = 'light',
   ctaButtonClassName = '',
   preText = 'Happy to see you here!',
+  productImage,
 }) {
   return (
     <div className='relative'>
       <div className='px-4 py-4 mx-auto sm:px-8 lg:px-10 max-w-7xl'>
         <div className='w-full text-center flex flex-col items-center justify-center'>
           <p
-            className={`bg-transparent border rounded p-2 text-sm my-2 ${
+            className={`bg-transparent border rounded p-2 font-thin text-sm my-2 ${
               theme === 'light'
                 ? 'text-white text-shadow shadow-gray-900'
                 : 'text-gray-900'
@@ -60,6 +62,13 @@ export default function Hero({
           )}
         </div>
       </div>
+      {productImage ? (
+        <img
+          className='w-[80vw] mx-auto rounded'
+          src={productImage}
+          alt='Hero'
+        />
+      ) : null}
     </div>
   );
 }
