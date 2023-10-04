@@ -63,11 +63,17 @@ export default function Hero({
         </div>
       </div>
       {productImage ? (
-        <img
-          className='w-[80vw] mx-auto rounded'
-          src={productImage}
-          alt='Hero'
-        />
+        <div className='flex flex-col items-center justify-center'>
+          <img
+            className='w-[80vw] mx-auto rounded'
+            src={productImage}
+            alt='UI image courtesy of ChartMogul'
+          />
+
+          <span className='text-xs text-center mx-auto text-white'>
+            UI image courtesy of ChartMogul
+          </span>
+        </div>
       ) : null}
     </div>
   );

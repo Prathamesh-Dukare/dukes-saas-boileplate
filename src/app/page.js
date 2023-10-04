@@ -1,20 +1,23 @@
 import Background from '@/components/Background';
+import Footer from '@/components/Footer';
 import Hero from '@/components/Hero';
 import Logos from '@/components/Logos';
+import Nav from '@/components/Nav';
 
 export default function Home() {
   return (
     <>
+      <Nav theme={'light'} />
       <div className='relative min-h-[20vh] py-4 sm:py-6 xl:py-12'>
-        <Background className={'bg-blue-50'} />
+        <Background className={'bg-green-950'} />
         <Hero
           preText={
             <>
               <span className='font-bold'>1000+</span>{' '}
-              <span className='text-green-700'>Happy Customers</span>
+              <span className='text-green-50'>Happy Customers</span>
             </>
           }
-          theme='dark'
+          theme='light'
           title={'Deliver Excellence'}
           subtitle={
             <>
@@ -36,6 +39,7 @@ export default function Home() {
         />
       </div>
       <Logos />
+      <Footer />
     </>
   );
 }

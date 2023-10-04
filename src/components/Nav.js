@@ -4,10 +4,13 @@ import Link from 'next/link';
 import { useState } from 'react';
 import CTA from './UI/CTA';
 
-export default function Nav() {
+export default function Nav({
+  navHeaderClassName = 'bg-green-950 text-white',
+  theme = 'light',
+}) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
-    <header className='border-b border-gray-50'>
+    <header className={navHeaderClassName}>
       <div className='px-4 mx-auto sm:px-6 lg:px-8'>
         <div className='flex items-center justify-between h-12 lg:h-16'>
           <div className='flex-shrink-0'>
@@ -21,7 +24,7 @@ export default function Nav() {
             title='toggle menu'
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             type='button'
-            className='inline-flex p-1 rounded-md text-gray-900 transition-all duration-200 border border-gray-900 lg:hidden focus:bg-gray-100 hover:bg-gray-100'
+            className='inline-flex p-1 rounded-md transition-all duration-200 border border-gray-900 lg:hidden focus:bg-gray-100 hover:bg-gray-100'
           >
             {!isMenuOpen ? (
               <svg
@@ -60,41 +63,41 @@ export default function Nav() {
             <Link
               href='/subscribe'
               title='Software Development Services Subscription'
-              className='text-base font-semibold text-gray-900 transition-all duration-200 hover:text-opacity-80'
+              className='text-base font-semibold transition-all duration-200 hover:text-opacity-80'
             >
               Company
             </Link>
             <Link
               href='https://nanodevpro.com/blog'
               title='Nanodevpro blog'
-              className='text-base font-semibold text-gray-900 transition-all duration-200 hover:text-opacity-80'
+              className='text-base font-semibold transition-all duration-200 hover:text-opacity-80'
             >
               Product
             </Link>
             <Link
               href='#portfolio'
               title='portfolio'
-              className='text-base font-semibold text-gray-900 transition-all duration-200 hover:text-opacity-80'
+              className='text-base font-semibold transition-all duration-200 hover:text-opacity-80'
             >
               Pricing
             </Link>
             <Link
               href='https://billing.stripe.com/p/login/9AQ9DLeZIftV17G6oo'
               title='login'
-              className='text-base font-semibold text-gray-900 transition-all duration-200 hover:text-opacity-80'
+              className='text-base font-semibold transition-all duration-200 hover:text-opacity-80'
             >
               Blog
             </Link>
-            {!isMenuOpen && <div className='w-px h-5 bg-black/20'></div>}
+            {!isMenuOpen && <div className='w-px h-5 bg-gray-50/20'></div>}
             <a
               target='_blank'
               href='https://cal.com/sandeep-indie/30min'
               title='Book a Call'
-              className='text-base font-semibold text-gray-900 transition-all duration-200 hover:text-opacity-80'
+              className='text-base font-semibold transition-all duration-200 hover:text-opacity-80'
             >
               Contact
             </a>
-            <CTA ctaText='Buy Template' />
+            <CTA blackTheme={theme === 'dark'} ctaText='Buy Template' />
           </div>
         </div>
 
@@ -103,7 +106,7 @@ export default function Nav() {
             <Link
               href='/subscribe'
               title='Software Development Services Subscription'
-              className='text-base font-semibold text-gray-900 transition-all duration-200 hover:text-opacity-80'
+              className='text-base font-semibold transition-all duration-200 hover:text-opacity-80'
             >
               Company
             </Link>
@@ -111,7 +114,7 @@ export default function Nav() {
             <Link
               href='https://nanodevpro.com/blog'
               title='Nanovepro blog'
-              className='text-base font-semibold text-gray-900 transition-all duration-200 hover:text-opacity-80'
+              className='text-base font-semibold transition-all duration-200 hover:text-opacity-80'
             >
               Product
             </Link>
@@ -119,7 +122,7 @@ export default function Nav() {
             <Link
               href='#portfolio'
               title='portfolio'
-              className='text-base font-semibold text-gray-900 transition-all duration-200 hover:text-opacity-80'
+              className='text-base font-semibold transition-all duration-200 hover:text-opacity-80'
             >
               Pricing
             </Link>
@@ -127,23 +130,23 @@ export default function Nav() {
             <Link
               href='https://billing.stripe.com/p/login/9AQ9DLeZIftV17G6oo'
               title='login'
-              className='text-base font-semibold text-gray-900 transition-all duration-200 hover:text-opacity-80'
+              className='text-base font-semibold transition-all duration-200 hover:text-opacity-80'
             >
               Blog
             </Link>
 
-            {!isMenuOpen && <div className='w-px h-5 bg-black/20'></div>}
+            {!isMenuOpen && <div className='w-px h-5 bg-gray-50/20'></div>}
 
             <a
               target='_blank'
               href='https://cal.com/sandeep-indie/30min'
               title='Book a Call'
-              className='text-base font-semibold text-gray-900 transition-all duration-200 hover:text-opacity-80'
+              className='text-base font-semibold transition-all duration-200 hover:text-opacity-80'
             >
               Book a Call
             </a>
 
-            <CTA ctaText='Buy Template' />
+            <CTA blackTheme={theme === 'dark'} ctaText='Buy Template' />
           </div>
         )}
       </div>
