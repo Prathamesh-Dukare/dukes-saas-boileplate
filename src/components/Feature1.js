@@ -2,6 +2,7 @@
 
 import { ArrowDownIcon, SettingsIcon } from 'lucide-react';
 import FeatureSection from './UI/FeatureSection';
+
 const features = [
   {
     name: 'Easy to Use',

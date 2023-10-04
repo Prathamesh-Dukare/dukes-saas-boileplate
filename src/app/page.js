@@ -1,5 +1,6 @@
 import Background from '@/components/Background';
 import Feature1 from '@/components/Feature1';
+import Feature2 from '@/components/Feature2';
 import Footer from '@/components/Footer';
 import Hero from '@/components/Hero';
 import Logos from '@/components/Logos';
@@ -44,6 +45,7 @@ export default function Home() {
       <Logos />
 
       <Feature1 />
+      <Feature2 />
 
       <Footer />
     </>
