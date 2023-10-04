@@ -1,5 +1,7 @@
+'use client';
 /* eslint-disable @next/next/no-img-element */
 import CTA from './UI/CTA';
+import { motion } from 'framer-motion';
 
 export default function Hero({
   title,
@@ -14,7 +16,17 @@ export default function Hero({
 }) {
   return (
     <div className='relative'>
-      <div className='px-4 py-4 mx-auto sm:px-8 lg:px-10 max-w-7xl'>
+      <motion.div
+        initial='hidden'
+        whileInView='visible'
+        viewport={{ once: true }}
+        transition={{ duration: 0.3 }}
+        variants={{
+          visible: { opacity: 1, scale: 1 },
+          hidden: { opacity: 0, scale: 0.5 },
+        }}
+        className='px-4 py-4 mx-auto sm:px-8 lg:px-10 max-w-7xl'
+      >
         <div className='w-full text-center flex flex-col items-center justify-center'>
           <p
             className={`bg-transparent border rounded p-2 font-thin text-sm my-2 ${
@@ -61,9 +73,19 @@ export default function Hero({
             </div>
           )}
         </div>
-      </div>
+      </motion.div>
       {productImage ? (
-        <div className='flex flex-col items-center justify-center'>
+        <motion.div
+          initial='hidden'
+          whileInView='visible'
+          viewport={{ once: true }}
+          transition={{ duration: 0.3 }}
+          variants={{
+            visible: { opacity: 1, scale: 1 },
+            hidden: { opacity: 0, scale: 0.5 },
+          }}
+          className='flex flex-col items-center justify-center'
+        >
           <img
             className='w-[80vw] mx-auto rounded'
             src={productImage}
@@ -73,7 +95,7 @@ export default function Hero({
           <span className='text-xs text-center mx-auto text-white'>
             UI image courtesy of ChartMogul
           </span>
-        </div>
+        </motion.div>
       ) : null}
     </div>
   );

@@ -1,4 +1,5 @@
 import Background from '@/components/Background';
+import Feature1 from '@/components/Feature1';
 import Footer from '@/components/Footer';
 import Hero from '@/components/Hero';
 import Logos from '@/components/Logos';
@@ -22,7 +23,9 @@ export default function Home() {
           subtitle={
             <>
               for your Customers with{' '}
-              <span className='bg-green-400 px-2 rounded'>Next.js</span>
+              <span className='bg-green-700 px-2 shadow-md rounded-md'>
+                Next.js
+              </span>
             </>
           }
           description={
@@ -39,6 +42,9 @@ export default function Home() {
         />
       </div>
       <Logos />
+
+      <Feature1 />
+
       <Footer />
     </>
   );
