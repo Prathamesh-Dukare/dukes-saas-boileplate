@@ -30,7 +30,7 @@ export default function Home() {
         }
         ctaButtonClassName='px-8 py-4'
         ctaText='Sign up for free'
-        productImage={'/hero.png'}
+        productImage={'/product.png'}
       />
     </>
   );
