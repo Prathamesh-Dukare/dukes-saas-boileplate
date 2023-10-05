@@ -5,7 +5,7 @@ import { useState } from 'react';
 import CTA from './UI/CTA';
 
 export default function Nav({
-  navHeaderClassName = 'bg-green-950 text-white',
+  navHeaderClassName = 'bg-green-900 text-white',
   theme = 'light',
 }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

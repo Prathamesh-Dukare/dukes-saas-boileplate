@@ -1,5 +1,6 @@
 'use client';
 
+import GlowText from './UI/GlowText';
 import ReviewBlock from './UI/ReviewBlock';
 
 const data = [
@@ -63,15 +64,17 @@ const data = [
 
 export default function Testimonials() {
   return (
-    <div className='bg-orange-50 py-20 w-full'>
-      <h3 className='text-center text-3xl font-semibold text-gray-800 mb-10'>
-        What our customers are saying
+    <div className='bg-green-600 py-20 w-full'>
+      <h3 className='text-center text-white text-xl sm:text-4xl font-semibold mb-8 sm:mb-16'>
+        <GlowText theme='light'>Testimonials</GlowText> from <br /> our
+        customers
       </h3>
       <div className='container mx-auto px-4'>
-        <div className='grid gird-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 items-center justify-center'>
+        <div className='grid gird-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-8 items-center justify-center'>
           {data.map((review, index) => {
             return (
               <ReviewBlock
+                index={index}
                 key={index}
                 date={review.date}
                 name={review.name}

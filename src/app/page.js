@@ -14,7 +14,7 @@ export default function Home() {
     <>
       <Nav theme={'light'} />
       <div className='relative min-h-[20vh] py-4 sm:py-6 xl:py-12'>
-        <Background className={'bg-green-950'} />
+        <Background className={'bg-green-900'} />
         <Hero
           preText={
             <>

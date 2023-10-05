@@ -7,9 +7,14 @@ export default function ReviewBlock({
   date = 'May 2021',
   text = '',
   imageSrc = '',
+  index,
 }) {
   return (
-    <div className='bg-white text-gray-950 w-full rounded p-6 flex flex-col space-y-4'>
+    <div
+      className={`bg-white text-gray-950 shadow w-full rounded-md p-6 flex flex-col space-y-4 ${
+        index % 2 === 0 ? 'rotate-2' : '-rotate-2'
+      }`}
+    >
       <div className='flex items-center'>
         <div className='w-16 h-16 rounded-full object-cover mr-4'>
           <Image
