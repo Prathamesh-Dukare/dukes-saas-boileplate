@@ -4,7 +4,9 @@ import Feature2 from '@/components/Feature2';
 import Footer from '@/components/Footer';
 import Hero from '@/components/Hero';
 import Logos from '@/components/Logos';
+import MultiFeature1 from '@/components/MultiFeature1';
 import Nav from '@/components/Nav';
+import GlowText from '@/components/UI/GlowText';
 
 export default function Home() {
   return (
@@ -23,10 +25,7 @@ export default function Home() {
           title={'Deliver Excellence'}
           subtitle={
             <>
-              for your Customers with{' '}
-              <span className='bg-green-700 px-2 shadow-md rounded-md'>
-                Next.js
-              </span>
+              for your Customers with <GlowText>Next.js</GlowText>
             </>
           }
           description={
@@ -45,6 +44,7 @@ export default function Home() {
       <Logos />
 
       <Feature1 />
+      <MultiFeature1 />
       <Feature2 />
 
       <Footer />
