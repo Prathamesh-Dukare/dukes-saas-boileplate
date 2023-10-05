@@ -27,7 +27,7 @@ export default function MultiFeatureSection({
             initial='hidden'
             whileInView='visible'
             viewport={{ once: true }}
-            transition={{ duration: 0.3 }}
+            transition={{ duration: 0.4 }}
             variants={{
               visible: { opacity: 1, translateX: 0 },
               hidden: { opacity: 0, translateX: reverseOrder ? -100 : 100 },
@@ -43,7 +43,7 @@ export default function MultiFeatureSection({
             initial='hidden'
             whileInView='visible'
             viewport={{ once: true }}
-            transition={{ duration: 0.3 }}
+            transition={{ duration: 0.4 }}
             variants={{
               visible: { opacity: 1, translateX: 0 },
               hidden: { opacity: 0, translateX: reverseOrder ? 100 : -100 },

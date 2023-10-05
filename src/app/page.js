@@ -23,10 +23,15 @@ export default function Home() {
             </>
           }
           theme='light'
-          title={'Deliver Excellence'}
+          title={
+            <>
+              Build your dream <br />
+              SAAS today
+            </>
+          }
           subtitle={
             <>
-              for your Customers with <GlowText>Next.js</GlowText>
+              This can be your <GlowText>Brand</GlowText>
             </>
           }
           description={

@@ -3,6 +3,8 @@
 import GlowText from './UI/GlowText';
 import ReviewBlock from './UI/ReviewBlock';
 
+import { motion } from 'framer-motion';
+
 const data = [
   {
     name: 'Alice Smith',
@@ -70,7 +72,17 @@ export default function Testimonials() {
         customers
       </h3>
       <div className='container mx-auto px-4'>
-        <div className='grid gird-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-8 items-center justify-center'>
+        <motion.div
+          initial='hidden'
+          whileInView='visible'
+          viewport={{ once: true }}
+          variants={{
+            visible: { opacity: 1, scale: 1 },
+            hidden: { opacity: 0, scale: 0.5 },
+          }}
+          transition={{ duration: 0.5 }}
+          className='grid gird-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-8 items-center justify-center'
+        >
           {data.map((review, index) => {
             return (
               <ReviewBlock
@@ -84,7 +96,7 @@ export default function Testimonials() {
               />
             );
           })}
-        </div>
+        </motion.div>
       </div>
     </div>
   );

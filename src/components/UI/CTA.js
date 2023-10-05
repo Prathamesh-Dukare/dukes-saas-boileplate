@@ -11,7 +11,7 @@ export default function CTA({
     <Link
       href={href}
       title={title}
-      className={`inline-flex items-center justify-center rounded-md px-5 py-3 text-base font-semibold transition-all duration-200 focus:bg-gray-900 focus:text-white ${
+      className={`inline-flex shadow items-center justify-center rounded px-5 py-3 text-base font-semibold transition-all duration-200 focus:bg-gray-900 focus:text-white ${
         !blackTheme
           ? 'text-gray-950 bg-white hover:bg-gray-200 focus:bg-white'
           : 'text-white bg-green-600 hover:bg-opacity-90 focus:bg-opacity-90'

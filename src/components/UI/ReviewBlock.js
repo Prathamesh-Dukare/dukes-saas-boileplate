@@ -11,8 +11,8 @@ export default function ReviewBlock({
 }) {
   return (
     <div
-      className={`bg-white text-gray-950 shadow w-full rounded-md p-6 flex flex-col space-y-4 ${
-        index % 2 === 0 ? 'rotate-2' : '-rotate-2'
+      className={`bg-white text-gray-950 w-full rounded-md p-6 flex flex-col space-y-4 ${
+        index % 2 === 0 ? 'sm:rotate-2' : 'sm:-rotate-2'
       }`}
     >
       <div className='flex items-center'>
