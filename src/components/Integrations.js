@@ -25,7 +25,6 @@ export default function Integrations() {
     'zapier.com',
     'make.com',
     'mailchimp.com',
-    'zoho.com',
     'slack.com',
     'github.com',
     'google.com',
@@ -42,9 +41,9 @@ export default function Integrations() {
 
   return (
     <section className='py-8 bg-green-600 sm:py-12 lg:py-36' ref={ref}>
-      <div className='max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 px-6 lg:px-8'>
-        <div className='flex flex-col space-y-6 sm:space-y-8'>
-          <h3 className='text-2xl sm:text-4xl text-white font-semibold text-gray-900'>
+      <div className='max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8 px-6 lg:px-8'>
+        <div className='flex flex-col items-center justify-center sm:items-start space-y-6 sm:space-y-8'>
+          <h3 className='text-3xl sm:text-5xl text-white font-semibold'>
             Make <GlowText theme='light'>productivity</GlowText> easier <br />{' '}
             with 50+ Integrations
           </h3>
