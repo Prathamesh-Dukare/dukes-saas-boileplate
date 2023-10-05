@@ -1,9 +1,9 @@
 import './globals.css';
-import { Space_Grotesk } from 'next/font/google';
+import { Archivo } from 'next/font/google';
 
-const spaceGrotesk = Space_Grotesk({
+const archivo = Archivo({
   subsets: ['latin'],
-  weight: ['300', '400', '500', '600', '700'],
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
 });
 
 export const metadata = {
@@ -14,7 +14,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang='en'>
-      <body className={spaceGrotesk.className}>
+      <body className={archivo.className}>
         <main className='flex-1 w-full mx-auto'>{children}</main>
       </body>
     </html>

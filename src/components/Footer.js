@@ -125,8 +125,10 @@ export default function Footer() {
           </ul>
 
           <p className='w-full mt-8 text-sm text-center text-gray-100 md:mt-0 md:w-auto md:order-2'>
-            © Copyright {new Date().getFullYear()}, All Rights Reserved by
-            Sandeep Acharya
+            © Copyright {new Date().getFullYear()}, All Rights Reserved by{' '}
+            <Link href='https://nanodevpro.com/' target='_blank'>
+              Sandeep Acharya
+            </Link>
           </p>
         </div>
       </div>

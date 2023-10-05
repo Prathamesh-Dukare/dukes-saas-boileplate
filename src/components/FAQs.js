@@ -51,7 +51,7 @@ export default function FAQs() {
               </h2>
             </div>
 
-            <p className='font-medium text-gray-950'>
+            <p className='text-base text-gray-600 w-3/4'>
               Your success is our top priority. Our dedicated support team is
               here to assist you every step of the way
             </p>

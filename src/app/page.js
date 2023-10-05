@@ -4,6 +4,7 @@ import Feature1 from '@/components/Feature1';
 import Feature2 from '@/components/Feature2';
 import Footer from '@/components/Footer';
 import Hero from '@/components/Hero';
+import Integrations from '@/components/Integrations';
 import Logos from '@/components/Logos';
 import MultiFeature1 from '@/components/MultiFeature1';
 import Nav from '@/components/Nav';
@@ -52,6 +53,7 @@ export default function Home() {
       <Testimonials />
       <MultiFeature1 />
       <Feature1 />
+      <Integrations />
       <Feature2 />
 
       <FAQs />

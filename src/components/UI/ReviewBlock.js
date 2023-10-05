@@ -16,7 +16,7 @@ export default function ReviewBlock({
       }`}
     >
       <div className='flex items-center'>
-        <div className='w-16 h-16 rounded-full object-cover mr-4'>
+        <div className='w-12 h-12 rounded-full object-cover mr-4'>
           <Image
             src={imageSrc}
             alt={name}
@@ -26,10 +26,8 @@ export default function ReviewBlock({
           />
         </div>
         <div>
-          <h2 className='text-md sm:text-lg font-semibold text-gray-800'>
-            {name}
-          </h2>
-          <p className='text-gray-600 text-sm sm:text-base'>{designation}</p>
+          <h2 className='text-md sm:text-lg font-bold text-gray-800'>{name}</h2>
+          <p className='text-gray-500 text-xs sm:text-sm'>{designation}</p>
         </div>
       </div>
       <div className='flex flex-row gap-1'>
@@ -44,8 +42,8 @@ export default function ReviewBlock({
           );
         })}
       </div>
-      <p className='mt-4 text-gray-700 text-sm'>{text}</p>
-      <p className='text-gray-400 text-xs sm:text-sm'>{date}</p>
+      <p className='mt-4 leading-6 text-gray-700 text-sm'>{text}</p>
+      <p className='text-gray-400 text-xs'>{date}</p>
     </div>
   );
 }
