@@ -32,8 +32,8 @@ export default function Feature2() {
         </>
       }
       videoSrcURL={'/working.mp4'}
-      bg={'bg-orange-50'}
-      preheaderTextColor={'text-blue-600'}
+      bg={'bg-white'}
+      preheaderTextColor={'text-gray-600'}
       ctaText='Start my free trial'
     />
   );

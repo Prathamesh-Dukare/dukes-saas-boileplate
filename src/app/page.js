@@ -48,12 +48,10 @@ export default function Home() {
         />
       </div>
       <Logos />
-
-      <Feature1 />
-      <Testimonials />
       <MultiFeature1 />
+      <Feature1 />
       <Feature2 />
-
+      <Testimonials />
       <Footer />
     </>
   );

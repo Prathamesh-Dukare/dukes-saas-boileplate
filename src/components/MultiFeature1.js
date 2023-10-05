@@ -36,6 +36,7 @@ export default function MultiFeature1() {
       preheader='Creative Freedom'
       reverseOrder={false}
       bg='bg-white'
+      preheaderTextColor='text-gray-950'
     />
   );
 }
