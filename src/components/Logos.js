@@ -10,7 +10,7 @@ const logos = [
 
 export default function Logos() {
   return (
-    <section className='py-4 bg-gray-50 sm:py-8 lg:py-12'>
+    <section className='py-4 bg-white sm:py-8 lg:py-12'>
       <h3 className='text-2xl sm:text-3xl md:text-4xl font-bold text-center text-gray-950 mb-8'>
         Trusted by the world&rsquo;s best
       </h3>

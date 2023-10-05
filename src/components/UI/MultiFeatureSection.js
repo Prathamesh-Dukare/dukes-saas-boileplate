@@ -19,7 +19,7 @@ export default function MultiFeatureSection({
   return (
     <div className={`relative py-16 sm:py-24 ${bg}`}>
       <div className='mx-auto max-w-7xl px-6 lg:px-8'>
-        <div className='mx-auto grid max-w-3xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-full lg:grid-cols-2'>
+        <div className='mx-auto grid max-w-3xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-x-16 sm:gap-y-20 lg:mx-0 lg:max-w-full lg:grid-cols-2'>
           <motion.div
             className={`flex self-center flex-col lg:pr-8 lg:pt-4 ${
               reverseOrder ? 'order-1' : ''

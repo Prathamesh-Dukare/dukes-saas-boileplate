@@ -38,7 +38,7 @@ const faqs = [
 
 export default function FAQs() {
   return (
-    <div className='bg-gray-50'>
+    <div className='bg-zinc-50'>
       <div className='max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8'>
         <div className='flex flex-col space-y-4'>
           <div className='grid grid-cols-1 gap-4 sm:grid-cols-2 py-4 sm:py-8'>
@@ -51,7 +51,7 @@ export default function FAQs() {
               </h2>
             </div>
 
-            <p className='text-base text-gray-600 w-3/4'>
+            <p className='text-base text-gray-900 w-3/4'>
               Your success is our top priority. Our dedicated support team is
               here to assist you every step of the way
             </p>
