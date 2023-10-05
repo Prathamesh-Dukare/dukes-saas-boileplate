@@ -120,10 +120,10 @@ const PricingTable = () => {
               <div className='mt-6 flex flex-col items-center'>
                 <Link
                   href='#'
-                  className={`rounded-full border w-full flex items-center justify-center px-4 py-2 bg-white text-gray-950 font-semibold ${
+                  className={`rounded-full border w-full flex items-center justify-center px-4 py-2 font-semibold ${
                     planName === 'Pro'
                       ? ' bg-gray-950 text-white'
-                      : 'border-gray-300'
+                      : 'bg-white text-gray-950'
                   }`}
                 >
                   Start free trial &nbsp; &rarr;
