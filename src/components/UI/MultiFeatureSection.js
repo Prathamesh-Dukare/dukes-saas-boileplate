@@ -1,8 +1,8 @@
+/* eslint-disable @next/next/no-img-element */
 'use client';
 
 import { motion } from 'framer-motion';
 
-import CTA from './CTA';
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 import Image from 'next/image';
@@ -33,12 +33,10 @@ export default function MultiFeatureSection({
               hidden: { opacity: 0, translateX: reverseOrder ? -100 : 100 },
             }}
           >
-            <Image
+            <img
               className='rounded-lg shadow-lg object-cover object-center sm:object-top'
               src='/man-work.jpg'
               alt='Man working'
-              width={500}
-              height={500}
             />
           </motion.div>
           <motion.div
@@ -71,7 +69,7 @@ export default function MultiFeatureSection({
                   <Link
                     href={cta.href}
                     key={index}
-                    className='flex w-3/4 flex-row items-center justify-between rounded-md border p-3'
+                    className='flex sm:w-3/4 flex-row items-center justify-between rounded-md border p-3'
                   >
                     <div className='flex flex-row gap-2 items-center'>
                       <div className='p-4 rounded-md bg-gray-50'>

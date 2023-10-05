@@ -6,6 +6,7 @@ import Hero from '@/components/Hero';
 import Logos from '@/components/Logos';
 import MultiFeature1 from '@/components/MultiFeature1';
 import Nav from '@/components/Nav';
+import Testimonials from '@/components/Testimonials';
 import GlowText from '@/components/UI/GlowText';
 
 export default function Home() {
@@ -44,6 +45,7 @@ export default function Home() {
       <Logos />
 
       <Feature1 />
+      <Testimonials />
       <MultiFeature1 />
       <Feature2 />
 
