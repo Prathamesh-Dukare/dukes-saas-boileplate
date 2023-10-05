@@ -1,4 +1,5 @@
 import Background from '@/components/Background';
+import FAQs from '@/components/FAQs';
 import Feature1 from '@/components/Feature1';
 import Feature2 from '@/components/Feature2';
 import Footer from '@/components/Footer';
@@ -48,10 +49,12 @@ export default function Home() {
         />
       </div>
       <Logos />
+      <Testimonials />
       <MultiFeature1 />
       <Feature1 />
       <Feature2 />
-      <Testimonials />
+
+      <FAQs />
       <Footer />
     </>
   );
