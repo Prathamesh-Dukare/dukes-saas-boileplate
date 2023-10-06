@@ -8,6 +8,7 @@ const spaceGrotesk = Space_Grotesk({
 
 const title = 'SAAS Starter Pro | Best Nextjs TailwindCSS SAAS Template';
 export const metadata = {
+  metadataBase: new URL('https://saas-starter-pro.vercel.app'),
   title,
   description: 'Best Nextjs TailwindCSS SAAS Template',
   openGraph: {

@@ -11,6 +11,7 @@ import Testimonials from '@/components/Testimonials';
 import Feature2 from '@/components/Feature2';
 import PricingTable from '@/components/PricingTable';
 import FAQs from '@/components/FAQs';
+import ProsePreview from '@/components/prose-preview';
 
 export const runtime = 'edge';
 
@@ -96,16 +97,8 @@ export default async function BuildServicePage({ params }) {
         </div>
       </section>
       <Logos />
-      <div className='pt-6 bg-gray-50 flex flex-col items-center pb-8 mx-auto xl:pt-20 sm:pb-8 lg:pb-12 xl:pb-16 2xl:pb-20 px-4'>
-        <div className='max-w-prose mx-auto'>
-          <div
-            className='w-full prose prose-gray'
-            dangerouslySetInnerHTML={{
-              __html: service.content,
-            }}
-          ></div>
-        </div>
-      </div>
+
+      <ProsePreview content={service.content} />
 
       <MultiFeature1 />
       <Testimonials />
