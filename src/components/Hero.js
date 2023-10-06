@@ -1,4 +1,5 @@
 'use client';
+import Image from 'next/image';
 /* eslint-disable @next/next/no-img-element */
 import CTA from './UI/CTA';
 import { motion } from 'framer-motion';
@@ -86,7 +87,9 @@ export default function Hero({
           }}
           className='flex flex-col items-center justify-center'
         >
-          <img
+          <Image
+            width={1200}
+            height={800}
             className='w-[80vw] mx-auto rounded'
             src={productImage}
             alt='UI image courtesy of ChartMogul'

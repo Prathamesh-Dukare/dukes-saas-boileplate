@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 /* eslint-disable @next/next/no-img-element */
 const logos = [
   'stripe.svg',
@@ -19,10 +21,12 @@ export default function Logos() {
           {logos.map((logo, index) => {
             return (
               <div className='p-2' key={index}>
-                <img
+                <Image
+                  width={40}
+                  height={40}
                   className='object-contain w-auto mx-auto h-10 filter brightness-125'
                   src={`/${logo}`}
-                  alt={`logos of ${logo}`}
+                  alt={`logo of ${logo}`}
                 />
               </div>
             );

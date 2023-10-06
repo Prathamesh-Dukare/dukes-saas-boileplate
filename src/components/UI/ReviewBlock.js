@@ -33,7 +33,9 @@ export default function ReviewBlock({
       <div className='flex flex-row gap-1'>
         {[...Array(5)].map((_, index) => {
           return (
-            <img
+            <Image
+              width={16}
+              height={16}
               alt='Star icon'
               src={'/star.svg'}
               key={index}
