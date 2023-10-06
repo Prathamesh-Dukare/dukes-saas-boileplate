@@ -9,7 +9,7 @@ export default function Footer() {
       <div className='px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl'>
         <div className='grid grid-cols-1 gap-x-5 gap-y-12 md:grid-cols-3 md:gap-x-12'>
           <div>
-            <p className='text-base text-gray-50'>Company</p>
+            <p className='text-xl text-gray-50'>Company</p>
 
             <ul className='mt-8 space-y-4'>
               <li>
@@ -52,7 +52,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <p className='text-base text-gray-50'>Product</p>
+            <p className='text-xl text-gray-50'>Product</p>
             <ul className='mt-8 space-y-4'>
               {services.map((service) => (
                 <li key={service.id}>
@@ -69,7 +69,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <p className='text-base text-gray-50'>Legal</p>
+            <p className='text-xl text-gray-50'>Legal</p>
 
             <ul className='mt-8 space-y-4'>
               <li>

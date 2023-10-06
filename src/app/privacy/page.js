@@ -9,7 +9,7 @@ const privacy = `
 export default function Privacy() {
   return (
     <>
-      <Nav />
+      <Nav theme='dark' navHeaderClassName='bg-gray-50 text-gray-950' />
       <ProsePreview content={privacy} />
       <Footer />
     </>

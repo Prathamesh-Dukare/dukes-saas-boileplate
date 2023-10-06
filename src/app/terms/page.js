@@ -17,7 +17,7 @@ const terms = `
 export default function Terms() {
   return (
     <>
-      <Nav />
+      <Nav navHeaderClassName='bg-neutral-950 text-white' />
       <ProsePreview content={terms} />
       <Footer />
     </>
