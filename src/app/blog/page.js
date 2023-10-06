@@ -1,4 +1,3 @@
-'use client';
 import Blogs from '@/components/Blogs';
 import Footer from '@/components/Footer';
 import Nav from '@/components/Nav';

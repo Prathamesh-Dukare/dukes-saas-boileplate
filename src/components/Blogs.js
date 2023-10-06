@@ -1,3 +1,4 @@
+'use client';
 import GlowText from '@/components/UI/GlowText';
 import { motion } from 'framer-motion';
 import { BookIcon } from 'lucide-react';
@@ -71,7 +72,7 @@ export default function Blogs() {
                           className='rounded-full object-cover'
                         />
                       </div>
-                      <div>
+                      <div className='flex flex-col'>
                         <h2 className='text-md sm:text-lg font-bold text-gray-800'>
                           {article.author}
                         </h2>
