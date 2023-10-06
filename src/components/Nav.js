@@ -90,10 +90,10 @@ export default function Nav({
             >
               Blog
             </Link>
-            {!isMenuOpen && <div className='w-px h-5 bg-gray-50/20'></div>}
+            {!isMenuOpen && <div className='w-px h-5 bg-gray-100/50'></div>}
             <a
               target='_blank'
-              href='https://cal.com/sandeep-indie/30min'
+              href='https://nanodevpro.com/contact'
               title='Book a Call'
               className='text-base font-semibold transition-all duration-200 hover:text-opacity-80'
             >

@@ -1,29 +1,23 @@
 'use client';
 
-import { BoxIcon, BuildingIcon, PenIcon } from 'lucide-react';
+import { BoxIcon, BuildingIcon, PenIcon, CableCarIcon } from 'lucide-react';
 import GlowText from './UI/GlowText';
 import MultiFeatureSection from './UI/MultiFeatureSection';
+
+import { services } from '@/lib/utils';
+
+const icons = [BoxIcon, BuildingIcon, PenIcon, CableCarIcon];
+
+const ctas = services.map((service, index) => ({
+  href: `/services/${service.slug}`,
+  text: service.title,
+  icon: icons[service.id - 1],
+}));
 
 export default function MultiFeature1() {
   return (
     <MultiFeatureSection
-      ctas={[
-        {
-          href: '/login',
-          text: 'Brand Management',
-          icon: PenIcon,
-        },
-        {
-          href: '/login',
-          text: 'Marketing SEO',
-          icon: BoxIcon,
-        },
-        {
-          href: '/login',
-          text: 'Social Media',
-          icon: BuildingIcon,
-        },
-      ]}
+      ctas={ctas}
       description={
         'World class development and built for performance, Slate will deliver to the highest standard, each and every time.'
       }

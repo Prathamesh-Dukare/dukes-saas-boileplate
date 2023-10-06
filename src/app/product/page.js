@@ -29,7 +29,7 @@ export default function Home() {
           title={<>We&apos;re on a mission to</>}
           subtitle={
             <>
-              power <GlowText>customers.</GlowText>
+              power <GlowText>Customers</GlowText>
             </>
           }
           description={

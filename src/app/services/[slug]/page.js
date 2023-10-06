@@ -26,16 +26,16 @@ async function getService(slug) {
 export async function generateMetadata({ params }) {
   const service = await getService(params.slug);
 
-  const title = `Best ${service.title} Services | NanoDevPro - A Micro Development Agency`;
+  const title = `SAAS Starter Pro - ${service.title}`;
   return {
     metadataBase: new URL('https://saas-starter-pro.vercel.app'),
     title,
-    description: service.description,
+    description: 'Best Nextjs TailwindCSS SAAS Template',
     openGraph: {
       title,
-      description: service.description,
+      description: 'Best Nextjs TailwindCSS SAAS Template',
       url: `https://saas-starter-pro.vercel.app/services/${service.slug}`,
-      siteName: 'nanodevpro.com',
+      siteName: 'saas-starter-pro.vercel.app',
       locale: 'en_US',
       type: 'website',
       images: [
@@ -49,7 +49,7 @@ export async function generateMetadata({ params }) {
     twitter: {
       card: 'summary_large_image',
       title,
-      description: service.description,
+      description: 'Best Nextjs TailwindCSS SAAS Template',
       creator: '@sandeep_indie',
       images: ['https://saas-starter-pro.vercel.app/og.jpg'],
     },
