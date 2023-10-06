@@ -88,9 +88,10 @@ export default function Hero({
           className='flex flex-col items-center justify-center'
         >
           <Image
+            quality={100}
             width={1200}
             height={800}
-            className='w-[80vw] mx-auto rounded'
+            className='w-[80vw] mx-auto rounded-md'
             src={productImage}
             alt='UI image courtesy of ChartMogul'
           />

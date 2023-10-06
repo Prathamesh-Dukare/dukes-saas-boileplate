@@ -47,7 +47,7 @@ export default function Home() {
             </>
           }
           ctaButtonClassName='px-8 py-4'
-          ctaText='Sign up for free'
+          ctaText='Get this template'
           productImage={'/product.png'}
         />
       </div>
