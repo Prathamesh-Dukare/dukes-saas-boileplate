@@ -11,7 +11,7 @@ export default function Background({ videoSrc, imgSrc, className }) {
       ) : null}
       {videoSrc ? (
         <video
-          className='absolute inset-0 w-full h-full object-cover'
+          className='absolute inset-0 w-full h-full object-cover brightness-75 object-center'
           controls={false}
           autoPlay={true}
           muted={true}
