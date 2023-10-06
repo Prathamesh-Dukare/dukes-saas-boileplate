@@ -118,7 +118,7 @@ export const articles = [
  
         <p>Search Engine Optimization is a dynamic field, and staying up-to-date with the latest trends and algorithms is crucial. By implementing effective SEO strategies, businesses can significantly increase their online visibility, attract more qualified leads, and ultimately drive sales.</p>
     `,
-    author: 'Sandeep Das',
+    author: 'Argha Das',
     date: 'May 23, 2021',
   },
 ];
