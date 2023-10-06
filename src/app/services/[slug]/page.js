@@ -82,7 +82,7 @@ export default async function BuildServicePage({ params }) {
                 <CTA
                   href='/subscribe'
                   title='subscribe'
-                  ctaText='Start a Project'
+                  ctaText='Buy this template'
                 />
               </div>
             </div>
