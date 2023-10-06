@@ -14,8 +14,8 @@ export default function Footer() {
             <ul className='mt-8 space-y-4'>
               <li>
                 <Link
-                  href='/#solutions'
-                  title='Solutions'
+                  href='/company'
+                  title='company'
                   className='text-base text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80'
                 >
                   Company
@@ -23,8 +23,8 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href='/#portfolio'
-                  title='Portfolio'
+                  href='/product'
+                  title='product'
                   className='text-base text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80'
                 >
                   Product
@@ -32,22 +32,21 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href='/contact'
-                  title='Contact NanoDevPro'
+                  href='/pricing'
+                  title='pricing'
                   className='text-base text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80'
                 >
                   Pricing
                 </Link>
               </li>
               <li>
-                <a
-                  target='_blank'
-                  href='mailto:sandeep@nanodevpro.com'
-                  title='Contact NanoDevPro'
+                <Link
+                  href='/blog'
+                  title='Blog'
                   className='text-base text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80'
                 >
                   Blog
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -98,11 +97,14 @@ export default function Footer() {
         <hr className='mt-16 mb-10 border-gray-800' />
 
         <div className='flex flex-wrap items-center justify-between'>
-          <img
-            className='h-12 rounded-md bg-white p-2 auto md:order-1'
-            src='/logo.png'
-            alt='Logo'
-          />
+          <div className='flex-shrink-0 text-white'>
+            <Link href='/' className='flex items-center justify-center gap-2'>
+              <img className='w-auto h-8' src='/logo.png' alt='Logo' />
+              <span className='font-bold underline-offset-4 underline'>
+                SAAS Starter
+              </span>
+            </Link>
+          </div>
 
           <ul className='flex items-center space-x-3 md:order-3'>
             <li>
