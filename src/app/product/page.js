@@ -26,10 +26,16 @@ export default function Home() {
             </>
           }
           theme='light'
-          title={<>We&apos;re on a mission to</>}
+          title={
+            <>
+              Focus on your <br />
+              Product
+            </>
+          }
           subtitle={
             <>
-              power <GlowText>Customers</GlowText>
+              <span className='font-bold'>SAAS Starter Kit</span> will <br />{' '}
+              take it to the <GlowText> next level</GlowText>
             </>
           }
           description={
@@ -40,7 +46,8 @@ export default function Home() {
             </>
           }
           ctaButtonClassName='px-8 py-4'
-          ctaText='Sign up for free'
+          ctaText='Buy this template'
+          productImage={'/product.png'}
         />
       </div>
 

@@ -40,10 +40,10 @@ export default function Home() {
           }
           description={
             <>
-              <span className='font-bold'>Next.js</span> and{' '}
-              <span className='font-bold'>Tailwind CSS</span> are a match made
-              in heaven. <br /> This starter template is a great way to get
-              started with your next project.
+              Crafted to Perfection. <br />
+              <span className='font-bold'>Next.js</span> SAAS Template featuring{' '}
+              <span className='font-bold'>TailwindCSS</span> and{' '}
+              <span className='font-bold'>Framer Motion</span>
             </>
           }
           ctaButtonClassName='px-8 py-4'

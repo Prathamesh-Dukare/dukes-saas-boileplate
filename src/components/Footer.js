@@ -1,6 +1,7 @@
 import Link from 'next/link';
 
 import { services } from '@/lib/utils';
+import Image from 'next/image';
 
 /* eslint-disable @next/next/no-img-element */
 export default function Footer() {
@@ -99,7 +100,13 @@ export default function Footer() {
         <div className='flex flex-wrap items-center justify-between'>
           <div className='flex-shrink-0 text-white'>
             <Link href='/' className='flex items-center justify-center gap-2'>
-              <img className='w-auto h-8' src='/logo.png' alt='Logo' />
+              <Image
+                height={32}
+                width={32}
+                className='w-auto h-8'
+                src='/logo.png'
+                alt='Logo'
+              />
               <span className='font-bold underline-offset-4 underline'>
                 SAAS Starter
               </span>

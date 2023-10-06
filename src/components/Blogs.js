@@ -9,7 +9,7 @@ import Link from 'next/link';
 
 export default function Blogs() {
   return (
-    <div className='bg-neutral-50'>
+    <div className='bg-slate-50'>
       <div className='max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8'>
         <div className='flex flex-col space-y-4'>
           <div className='grid grid-cols-1 gap-4 sm:grid-cols-2 py-4 sm:py-8'>
@@ -43,7 +43,7 @@ export default function Blogs() {
                 <Link
                   href={`/blog/${article.slug}`}
                   key={index}
-                  className='max-w-prose mx-auto rounded-lg bg-white shadow-lg overflow-hidden p-2'
+                  className='max-w-prose mx-auto rounded-lg bg-white overflow-hidden p-2'
                 >
                   <div className='flex w-full rounded-lg overflow-hidden hover:scale-105 transition-all duration-200'>
                     <Image

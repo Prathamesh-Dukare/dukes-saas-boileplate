@@ -2,7 +2,7 @@ export const services = [
   {
     id: 1,
     slug: 'cloud-storage',
-    title: 'Cloud Storage Solutions',
+    title: 'Cloud Storage',
     description: 'Secure and scalable cloud storage for your business.',
     details:
       'Our Cloud Storage Solutions offer secure, scalable, and easy-to-use storage options that integrate seamlessly with your existing infrastructure.',
@@ -35,7 +35,7 @@ export const services = [
   {
     id: 4,
     slug: 'api-integration',
-    title: 'API Integration Services',
+    title: 'API Integration',
     description:
       'Seamlessly integrate third-party services into your application.',
     details:

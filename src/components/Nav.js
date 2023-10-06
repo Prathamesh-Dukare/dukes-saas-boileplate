@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import CTA from './UI/CTA';
+import Image from 'next/image';
 
 export default function Nav({
   navHeaderClassName = 'bg-green-900 text-white',
@@ -15,7 +16,13 @@ export default function Nav({
         <div className='flex items-center justify-between h-12 lg:h-16'>
           <div className='flex-shrink-0'>
             <Link href='/' className='flex items-center justify-center gap-2'>
-              <img className='w-auto h-8' src='/logo.png' alt='Logo' />
+              <Image
+                width={32}
+                height={32}
+                className='w-auto h-8'
+                src='/logo.png'
+                alt='Logo'
+              />
               <span className='font-bold underline-offset-4 underline'>
                 SAAS Starter
               </span>

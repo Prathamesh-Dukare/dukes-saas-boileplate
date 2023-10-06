@@ -61,7 +61,7 @@ export default async function BuildServicePage({ params }) {
   const article = await getBlog(params.slug);
   return (
     <>
-      <Nav theme={'dark'} navHeaderClassName='bg-gray-50 text-gray-950' />
+      <Nav theme={'dark'} navHeaderClassName='bg-white text-gray-950' />
       <BlogDetails article={article} />
       <Blogs />
 

@@ -30,13 +30,15 @@ export default function MultiFeatureSection({
             transition={{ duration: 0.4 }}
             variants={{
               visible: { opacity: 1, translateX: 0 },
-              hidden: { opacity: 0, translateX: reverseOrder ? -100 : 100 },
+              hidden: { opacity: 0, translateX: reverseOrder ? 100 : -100 },
             }}
           >
-            <img
+            <Image
               className='rounded-lg shadow-lg object-cover object-center sm:object-top'
               src='/man-work.jpg'
               alt='Man working'
+              width={600}
+              height={600}
             />
           </motion.div>
           <motion.div
@@ -46,7 +48,7 @@ export default function MultiFeatureSection({
             transition={{ duration: 0.4 }}
             variants={{
               visible: { opacity: 1, translateX: 0 },
-              hidden: { opacity: 0, translateX: reverseOrder ? 100 : -100 },
+              hidden: { opacity: 0, translateX: reverseOrder ? -100 : 100 },
             }}
             className={`lg:pr-8 lg:pt-4 ${reverseOrder ? 'order-2' : ''}`}
           >
