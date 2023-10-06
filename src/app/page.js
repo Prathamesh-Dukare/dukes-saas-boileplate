@@ -1,4 +1,5 @@
 import Background from '@/components/Background';
+import Blogs from '@/components/Blogs';
 import FAQs from '@/components/FAQs';
 import Feature1 from '@/components/Feature1';
 import Feature2 from '@/components/Feature2';
@@ -55,6 +56,7 @@ export default function Home() {
       <MultiFeature1 />
       <Feature1 />
       <Integrations />
+      <Blogs />
       <Feature2 />
       <PricingTable />
       <FAQs />

@@ -1,4 +1,5 @@
 import Background from '@/components/Background';
+import Blogs from '@/components/Blogs';
 import FAQs from '@/components/FAQs';
 import Feature1 from '@/components/Feature1';
 import Feature2 from '@/components/Feature2';
@@ -52,6 +53,7 @@ export default function Home() {
       <Logos />
       <Feature1 />
       <Feature2 />
+      <Blogs />
       <FAQs />
       <Footer />
     </>
