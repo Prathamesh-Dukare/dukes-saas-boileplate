@@ -2,15 +2,9 @@
 import Link from 'next/link';
 
 import { getBlogBySlug, articles } from '@/lib/utils';
-import Logos from '@/components/Logos';
 import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
-import CTA from '@/components/UI/CTA';
-
-import ProsePreview from '@/components/prose-preview';
-import Image from 'next/image';
 import Blogs from '@/components/Blogs';
-import MultiFeature1 from '@/components/MultiFeature1';
 import BlogDetails from '@/components/BlogDetails';
 
 export const runtime = 'edge';

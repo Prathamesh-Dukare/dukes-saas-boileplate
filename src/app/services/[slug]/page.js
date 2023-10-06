@@ -5,7 +5,6 @@ import { getServiceBySlug, services } from '@/lib/utils';
 import Logos from '@/components/Logos';
 import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
-import CTA from '@/components/UI/CTA';
 import MultiFeature1 from '@/components/MultiFeature1';
 import Testimonials from '@/components/Testimonials';
 import Feature2 from '@/components/Feature2';

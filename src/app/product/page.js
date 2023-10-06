@@ -1,7 +1,5 @@
 import Background from '@/components/Background';
 import FAQs from '@/components/FAQs';
-import Feature1 from '@/components/Feature1';
-import Feature2 from '@/components/Feature2';
 import Footer from '@/components/Footer';
 import Hero from '@/components/Hero';
 import Integrations from '@/components/Integrations';
