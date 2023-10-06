@@ -8,19 +8,19 @@ const spaceGrotesk = Space_Grotesk({
 
 const title = 'SAAS Starter Pro | Best Nextjs TailwindCSS SAAS Template';
 export const metadata = {
-  metadataBase: new URL('https://saas-starter-pro.vercel.app'),
+  metadataBase: new URL('https://saas-starter.nanodevpro.com'),
   title,
   description: 'Best Nextjs TailwindCSS SAAS Template',
   openGraph: {
     title,
     description: 'Best Nextjs TailwindCSS SAAS Template',
-    url: `https://saas-starter-pro.vercel.app`,
-    siteName: 'saas-starter-pro.vercel.app',
+    url: `https://saas-starter.nanodevpro.com`,
+    siteName: 'saas-starter.nanodevpro.com',
     locale: 'en_US',
     type: 'website',
     images: [
       {
-        url: 'https://saas-starter-pro.vercel.app/og.jpg',
+        url: 'https://saas-starter.nanodevpro.com/og.jpg',
         width: 2400,
         height: 1260,
       },
@@ -31,7 +31,7 @@ export const metadata = {
     title,
     description: 'Best Nextjs TailwindCSS SAAS Template',
     creator: '@sandeep_indie',
-    images: ['https://saas-starter-pro.vercel.app/og.jpg'],
+    images: ['https://saas-starter.nanodevpro.com/og.jpg'],
   },
 };
 
