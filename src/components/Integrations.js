@@ -54,7 +54,7 @@ export default function Integrations() {
           <div className='flex flex-row justify-start'>
             <CTA
               ctaText='View all integrations'
-              ctaLink='#'
+              ctaLink='https://sandeep1995.gumroad.com/l/saas-starter-pro'
               blackTheme={false}
             />
           </div>

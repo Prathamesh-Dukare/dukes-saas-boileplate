@@ -119,7 +119,8 @@ const PricingTable = () => {
               </div>
               <div className='mt-6 flex flex-col items-center'>
                 <Link
-                  href='#'
+                  target='_blank'
+                  href='https://sandeep1995.gumroad.com/l/saas-starter-pro'
                   className={`rounded-full border w-full flex items-center justify-center px-4 py-2 font-semibold ${
                     planName === 'Pro'
                       ? ' bg-gray-950 text-white'

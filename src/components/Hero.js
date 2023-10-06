@@ -8,7 +8,7 @@ export default function Hero({
   subtitle,
   description,
   ctaText = 'Find out more',
-  ctaHref = '/contact',
+  ctaHref = 'https://sandeep1995.gumroad.com/l/saas-starter-pro',
   theme = 'light',
   ctaButtonClassName = '',
   preText = 'Happy to see you here!',

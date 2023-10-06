@@ -29,7 +29,7 @@ export default function MultiFeature1() {
       }
       preheader='Creative Freedom'
       reverseOrder={false}
-      bg='bg-white'
+      bg='bg-slate-50'
       preheaderTextColor='text-gray-950'
     />
   );

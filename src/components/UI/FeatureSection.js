@@ -15,7 +15,7 @@ export default function FeatureSection({
   preheaderTextColor = 'text-gray-600',
   reverseOrder = false,
   poster,
-  ctaLink,
+  ctaLink = 'https://sandeep1995.gumroad.com/l/saas-starter-pro',
   ctaText = 'Start my free trial',
 }) {
   return (
@@ -62,7 +62,11 @@ export default function FeatureSection({
             </div>
             <div className='mt-10'>
               <CTA
-                href={ctaLink ? ctaLink : '/login'}
+                href={
+                  ctaLink
+                    ? ctaLink
+                    : 'https://sandeep1995.gumroad.com/l/saas-starter-pro'
+                }
                 ctaText={ctaText || 'Try for free'}
               />
             </div>

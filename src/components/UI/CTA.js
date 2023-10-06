@@ -1,14 +1,15 @@
 import Link from 'next/link';
 
 export default function CTA({
-  href = '/contact',
-  title = 'contact us',
-  ctaText = 'Discuss your Project',
+  href = 'https://sandeep1995.gumroad.com/l/saas-starter-pro',
+  title = 'Buy this template',
+  ctaText = 'Buy this template',
   className = '',
   blackTheme = true,
 }) {
   return (
     <Link
+      target='_blank'
       href={href}
       title={title}
       className={`inline-flex shadow items-center justify-center rounded px-5 py-3 text-base font-semibold transition-all duration-200 ${

@@ -79,11 +79,7 @@ export default async function BuildServicePage({ params }) {
               </p>
 
               <div className='mt-10 flex items-center space-x-8'>
-                <CTA
-                  href='/subscribe'
-                  title='subscribe'
-                  ctaText='Buy this template'
-                />
+                <CTA ctaText='Buy this template' />
               </div>
             </div>
             <div className='flex items-center justify-center'>
