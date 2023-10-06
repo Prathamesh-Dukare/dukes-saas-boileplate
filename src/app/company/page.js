@@ -9,7 +9,6 @@ import Integrations from '@/components/Integrations';
 import Logos from '@/components/Logos';
 import MultiFeature1 from '@/components/MultiFeature1';
 import Nav from '@/components/Nav';
-import PricingTable from '@/components/PricingTable';
 import Testimonials from '@/components/Testimonials';
 import GlowText from '@/components/UI/GlowText';
 
