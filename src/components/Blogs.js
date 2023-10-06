@@ -22,8 +22,8 @@ export default function Blogs() {
             </div>
 
             <p className='text-base text-gray-900 w-3/4'>
-              Make informed decisions with confidence. Slate provides you with
-              insights.
+              Make informed decisions with confidence. SAAS Starter provides you
+              with insights.
             </p>
           </div>
           <motion.div

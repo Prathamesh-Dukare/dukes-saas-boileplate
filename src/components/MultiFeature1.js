@@ -19,7 +19,7 @@ export default function MultiFeature1() {
     <MultiFeatureSection
       ctas={ctas}
       description={
-        'World class development and built for performance, Slate will deliver to the highest standard, each and every time.'
+        'World class development and built for performance, SAAS Starter will deliver to the highest standard, each and every time.'
       }
       heading={
         <>
