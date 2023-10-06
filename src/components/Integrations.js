@@ -68,14 +68,14 @@ export default function Integrations() {
           {integrationDomains.map((domain, index) => (
             <motion.div
               key={index}
-              className='w-24 h-24 rounded-full bg-white shadow-sm flex items-center justify-center'
+              className='w-20 h-20 rounded-full bg-white shadow-sm flex items-center justify-center'
               variants={variants}
               custom={index}
             >
               <Image
                 className='rounded-full'
-                width={48}
-                height={48}
+                width={36}
+                height={36}
                 src={`https://logo.clearbit.com/${domain}`}
                 alt={domain}
               />

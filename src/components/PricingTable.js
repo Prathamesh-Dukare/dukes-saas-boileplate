@@ -55,7 +55,7 @@ const PricingTable = () => {
   const [annual, setAnnual] = useState(false);
 
   return (
-    <div className='bg-gray-50 flex flex-col justify-center items-center px-4 mt-14'>
+    <div className='bg-gray-50 flex flex-col justify-center items-center px-4 pt-14'>
       <h1 className='text-xl pt-10 font-bold leading-tight text-gray-900 sm:text-2xl sm:leading-tight lg:text-5xl lg:leading-tight px-4 text-center'>
         Pricing
       </h1>
