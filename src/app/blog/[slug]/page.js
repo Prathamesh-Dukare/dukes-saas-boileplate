@@ -1,6 +1,4 @@
 /* eslint-disable @next/next/no-img-element */
-import Link from 'next/link';
-
 import { getBlogBySlug, articles } from '@/lib/utils';
 import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
