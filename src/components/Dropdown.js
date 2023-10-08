@@ -9,9 +9,9 @@ function classNames(...classes) {
 
 export default function DropDown({
   menuItems = [
-    { name: 'Home 1', href: '/' },
-    { name: 'Home 2', href: '/' },
-    { name: 'Home 3', href: '/' },
+    { name: 'Home Variant 1', href: '/' },
+    { name: 'Home Variant 2', href: '/company' },
+    { name: 'Home Variant 3', href: '/product' },
   ],
 }) {
   return (
