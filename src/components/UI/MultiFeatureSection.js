@@ -6,7 +6,22 @@ import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 import Image from 'next/image';
-
+/**
+ * MultiFeatureSection Component
+ *
+ * A reusable multi-feature section component for displaying a preheader, heading,
+ * description, and a list of call-to-action links with icons.
+ *
+ * @param {Object} props - Component props
+ * @param {string} props.preheader - A brief preheader or sub-title for the section.
+ * @param {string} props.heading - The main heading for the section.
+ * @param {string} props.description - A description or content for the section.
+ * @param {string} [props.bg='bg-gray-100'] - Background color of the section.
+ * @param {string} [props.preheaderTextColor='text-gray-600'] - Color of the preheader text.
+ * @param {boolean} [props.reverseOrder=false] - Whether to reverse the order of content (image and text).
+ * @param {Array} [props.ctas=[]] - An array of call-to-action objects, each containing href, icon, and text.
+ * @returns {JSX.Element} - Rendered MultiFeatureSection component.
+ */
 export default function MultiFeatureSection({
   preheader,
   heading,

@@ -1,3 +1,13 @@
+/**
+ * GlowText Component
+ *
+ * A reusable component for displaying text with a glowing background.
+ *
+ * @param {Object} props - Component props
+ * @param {string} [props.children] - The text content to display with the glowing background.
+ * @param {string} [props.theme='dark'] - The theme for the glowing text ('dark' or 'light').
+ * @returns {JSX.Element} - Rendered GlowText component.
+ */
 export default function GlowText({ children, theme = 'dark' }) {
   return (
     <span

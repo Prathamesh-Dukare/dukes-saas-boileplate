@@ -5,6 +5,26 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import CTA from './CTA';
 
+/**
+ * FeatureSection Component
+ *
+ * A reusable feature section component for displaying a preheader, heading,
+ * description, features list, and an optional video or image.
+ *
+ * @param {Object} props - Component props
+ * @param {string} props.preheader - A brief preheader or sub-title for the section.
+ * @param {string} props.heading - The main heading for the section.
+ * @param {string} props.description - A description or content for the section.
+ * @param {string} props.videoSrcURL - URL of a video to display (optional).
+ * @param {Array} props.features - An array of feature objects, each containing a name and description.
+ * @param {string} [props.bg='bg-gray-100'] - Background color of the section.
+ * @param {string} [props.preheaderTextColor='text-gray-600'] - Color of the preheader text.
+ * @param {boolean} [props.reverseOrder=false] - Whether to reverse the order of content (video/image and text).
+ * @param {string} [props.poster] - URL of an image to use as the poster (if no video).
+ * @param {string} [props.ctaLink='https://sandeep1995.gumroad.com/l/saas-starter-pro'] - URL for the call-to-action button.
+ * @param {string} [props.ctaText='Start my free trial'] - Text for the call-to-action button.
+ * @returns {JSX.Element} - Rendered FeatureSection component.
+ */
 export default function FeatureSection({
   preheader,
   heading,

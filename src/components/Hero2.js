@@ -5,6 +5,20 @@ import { motion } from 'framer-motion';
 import CTA from './UI/CTA';
 import Image from 'next/image';
 
+/**
+ * Hero2 Component
+ *
+ * A reusable hero component for displaying a service with a title, description,
+ * details, and an optional image.
+ *
+ * @param {Object} props - Component props
+ * @param {Object} props.service - The service object to display.
+ * @param {string} props.service.title - The title of the service.
+ * @param {string} props.service.description - A brief description of the service.
+ * @param {string} props.service.details - Additional details or information about the service.
+ * @param {string} props.service.image - URL of the image representing the service.
+ * @returns {JSX.Element} - Rendered Hero2 component.
+ */
 export default function Hero2({ service }) {
   return (
     <section className='py-4 sm:py-10 lg:py-16 bg-white'>

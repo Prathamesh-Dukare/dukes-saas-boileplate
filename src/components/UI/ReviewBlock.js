@@ -1,6 +1,21 @@
 /* eslint-disable @next/next/no-img-element */
 import Image from 'next/image';
 
+/**
+ * ReviewBlock Component
+ *
+ * A reusable component for displaying a review block with a name, designation,
+ * date, text, and an image.
+ *
+ * @param {Object} props - Component props
+ * @param {string} [props.name='John Doe'] - The name of the reviewer.
+ * @param {string} [props.designation='CEO, ABC Company'] - The designation of the reviewer.
+ * @param {string} [props.date='May 2021'] - The date of the review.
+ * @param {string} [props.text=''] - The review text or content.
+ * @param {string} [props.imageSrc=''] - URL of the reviewer's image.
+ * @param {number} [props.index] - An index used to determine the rotation of the review block.
+ * @returns {JSX.Element} - Rendered ReviewBlock component.
+ */
 export default function ReviewBlock({
   name = 'John Doe',
   designation = 'CEO, ABC Company',

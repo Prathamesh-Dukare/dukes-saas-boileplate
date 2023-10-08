@@ -4,6 +4,25 @@ import Image from 'next/image';
 import CTA from './UI/CTA';
 import { motion } from 'framer-motion';
 
+/**
+ * Hero Component
+ *
+ * A reusable hero component for displaying a title, subtitle, description,
+ * call-to-action button, and an optional product image.
+ *
+ * @param {Object} props - Component props
+ * @param {string} props.title - The main title for the hero section.
+ * @param {string} props.subtitle - The subtitle for the hero section.
+ * @param {string} props.description - The description or content for the hero section.
+ * @param {string} [props.ctaText='Find out more'] - The text for the call-to-action button.
+ * @param {string} [props.ctaHref='https://sandeep1995.gumroad.com/l/saas-starter-pro'] - The URL the call-to-action button should link to.
+ * @param {string} [props.theme='light'] - The theme for the hero section ('light' or 'dark').
+ * @param {string} [props.ctaButtonClassName=''] - Additional CSS class for the call-to-action button.
+ * @param {string} [props.preText=''] - Optional text to display above the title.
+ * @param {string} [props.productImage] - URL of the product image to display.
+ * @param {string} [props.afterProductImage=''] - Optional text to display below the product image.
+ * @returns {JSX.Element} - Rendered Hero component.
+ */
 export default function Hero({
   title,
   subtitle,
