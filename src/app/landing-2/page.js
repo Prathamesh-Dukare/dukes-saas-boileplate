@@ -3,8 +3,6 @@ import FAQs from '@/components/FAQs';
 import Footer from '@/components/Footer';
 import Hero from '@/components/Hero';
 import Integrations from '@/components/Integrations';
-import Logos from '@/components/Logos';
-import MultiFeature1 from '@/components/MultiFeature1';
 import Nav from '@/components/Nav';
 import PricingTable from '@/components/PricingTable';
 import Testimonials from '@/components/Testimonials';
@@ -15,18 +13,15 @@ export default function Home() {
     <>
       <div className='relative min-h-[20vh] pb-4 sm:pb-6 xl:pb-12'>
         <Background className={'bg-black'} videoSrc={'/working.mp4'} />
-        <Nav
-          theme={'light'}
-          navHeaderClassName='bg-transparent text-white'
-          buttonClassName='bg-black text-white hover:bg-black/90'
-        />
+        <Nav theme={'light'} navHeaderClassName='bg-transparent text-white' />
         <Hero
           theme='light'
           title={<>Next Unicorn</>}
+          preText='SAAS Starter'
           subtitle={
             <>
               Full featured SAAS template <br /> built with
-              <GlowText className='bg-green-600'>Next.js</GlowText>
+              <GlowText className='bg-black'>Next.js</GlowText>
             </>
           }
           description={
@@ -36,7 +31,7 @@ export default function Home() {
               will deliver each and every time.
             </>
           }
-          ctaButtonClassName='px-8 py-4 bg-black text-white hover:bg-black/90'
+          ctaButtonClassName='px-8 py-4'
           ctaText='Buy this template'
           productImage={'/spotify.png'}
           afterProductImage='UI image is courtesy of Spotify'
@@ -46,6 +41,7 @@ export default function Home() {
       <Integrations className={'bg-black'} />
 
       <PricingTable />
+      <Testimonials />
       <FAQs />
       <Footer />
     </>
