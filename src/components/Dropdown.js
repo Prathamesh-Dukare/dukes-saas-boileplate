@@ -9,11 +9,25 @@ function classNames(...classes) {
 
 export default function DropDown({
   menuItems = [
-    { name: 'Home 1', href: '/' },
-    { name: 'Home 2', href: '/company' },
-    { name: 'Home 3', href: '/product' },
-    { name: 'Two Cols Landing', href: '/services/data-analytics' },
+    { name: 'Default', href: '/' },
+    { name: 'Clean Back', href: '/company' },
+    { name: 'Modern', href: '/product' },
+    { name: '2 Cols Landing', href: '/services/data-analytics' },
     { name: 'Video Back', href: '/landing-2' },
+    { name: 'Image Back', href: '/landing-3' },
+    { name: 'Blog', href: '/blog' },
+    {
+      name: 'Blog Details',
+      href: '/blog/new-ways-to-improve-your-customer-experience',
+    },
+    {
+      name: 'Pricing',
+      href: '/pricing',
+    },
+    {
+      name: 'Legal',
+      href: '/terms',
+    },
   ],
 }) {
   return (

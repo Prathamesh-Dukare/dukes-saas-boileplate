@@ -72,13 +72,7 @@ export default function Nav({
 
           <div className='hidden ml-auto lg:flex lg:items-center lg:justify-center lg:space-x-10'>
             <DropDown />
-            <Link
-              href='/company'
-              title='company'
-              className='text-base font-semibold transition-all duration-200 hover:text-opacity-80'
-            >
-              Company
-            </Link>
+
             <Link
               href='/product'
               title='product'

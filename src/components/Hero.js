@@ -100,7 +100,13 @@ export default function Hero({
           />
 
           {afterProductImage && (
-            <span className='text-xs text-center mx-auto text-white'>
+            <span
+              className={`text-xs text-center mx-auto ${
+                theme === 'light'
+                  ? 'text-shadow shadow-gray-900 text-white'
+                  : 'text-gray-900 text-gray-950'
+              }`}
+            >
               {afterProductImage}
             </span>
           )}

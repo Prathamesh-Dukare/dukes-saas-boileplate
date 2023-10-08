@@ -23,7 +23,7 @@ export default function Integrations({ className }) {
 
   const integrationDomains = [
     'zapier.com',
-    'make.com',
+    'spotify.com',
     'mailchimp.com',
     'slack.com',
     'github.com',
