@@ -13,9 +13,9 @@ import GlowText from '@/components/UI/GlowText';
 export default function Home() {
   return (
     <>
-      <Nav theme={'dark'} navHeaderClassName='bg-gray-50 text-gray-950' />
-      <div className='relative min-h-[20vh] py-4 sm:py-6 xl:py-12'>
-        <Background className={'bg-gray-50'} videoSrc={'/landing.mp4'} />
+      <div className='relative min-h-[20vh] pb-4 sm:pb-6 xl:pb-12'>
+        <Background className={'bg-[#181a1b]'} />
+        <Nav theme={'light'} navHeaderClassName='bg-transparent text-white' />
         <Hero
           preText={
             <>
@@ -32,8 +32,8 @@ export default function Home() {
           }
           subtitle={
             <>
-              <span className='font-bold'>SAAS Starter Kit</span> will <br />{' '}
-              take it to the <GlowText> next level</GlowText>
+              Full featured SAAS template <br /> built with
+              <GlowText>Next.js</GlowText>
             </>
           }
           description={
