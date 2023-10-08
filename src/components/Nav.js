@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { useState } from 'react';
 import CTA from './UI/CTA';
 import Image from 'next/image';
+import DropDown from './Dropdown';
 
 export default function Nav({
   navHeaderClassName = 'bg-green-900 text-white',
@@ -69,6 +70,7 @@ export default function Nav({
           </button>
 
           <div className='hidden ml-auto lg:flex lg:items-center lg:justify-center lg:space-x-10'>
+            <DropDown />
             <Link
               href='/company'
               title='company'

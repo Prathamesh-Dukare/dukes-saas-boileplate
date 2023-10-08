@@ -26,10 +26,10 @@ export async function generateMetadata({ params }) {
   return {
     metadataBase: new URL('https://saas-starter.nanodevpro.com'),
     title,
-    description: 'Best Nextjs TailwindCSS SAAS Template',
+    description: article.description,
     openGraph: {
       title,
-      description: 'Best Nextjs TailwindCSS SAAS Template',
+      description: article.description,
       url: `https://saas-starter.nanodevpro.com/blog/${article.slug}`,
       siteName: 'saas-starter.nanodevpro.com',
       locale: 'en_US',
@@ -45,7 +45,7 @@ export async function generateMetadata({ params }) {
     twitter: {
       card: 'summary_large_image',
       title,
-      description: 'Best Nextjs TailwindCSS SAAS Template',
+      description: article.description,
       creator: '@sandeep_indie',
       images: ['https://saas-starter.nanodevpro.com/og.jpg'],
     },
