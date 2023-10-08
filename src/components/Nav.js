@@ -9,6 +9,7 @@ import DropDown from './Dropdown';
 export default function Nav({
   navHeaderClassName = 'bg-green-900 text-white',
   theme = 'light',
+  buttonClassName = '',
 }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
@@ -108,7 +109,11 @@ export default function Nav({
             >
               Contact
             </a>
-            <CTA blackTheme={theme === 'dark'} ctaText='Buy Template' />
+            <CTA
+              className={buttonClassName}
+              blackTheme={theme === 'dark'}
+              ctaText='Buy Template'
+            />
           </div>
         </div>
 
@@ -157,7 +162,11 @@ export default function Nav({
               Book a Call
             </a>
 
-            <CTA blackTheme={theme === 'dark'} ctaText='Buy Template' />
+            <CTA
+              className={buttonClassName}
+              blackTheme={theme === 'dark'}
+              ctaText='Buy Template'
+            />
           </div>
         )}
       </div>

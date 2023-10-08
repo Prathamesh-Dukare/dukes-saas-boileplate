@@ -14,26 +14,19 @@ export default function Home() {
   return (
     <>
       <div className='relative min-h-[20vh] pb-4 sm:pb-6 xl:pb-12'>
-        <Background className={'bg-[#181a1b]'} />
-        <Nav theme={'light'} navHeaderClassName='bg-transparent text-white' />
+        <Background className={'bg-black'} videoSrc={'/working.mp4'} />
+        <Nav
+          theme={'light'}
+          navHeaderClassName='bg-transparent text-white'
+          buttonClassName='bg-black text-white hover:bg-black/90'
+        />
         <Hero
-          preText={
-            <>
-              <span className='font-bold'>1000+</span>{' '}
-              <span className='text-gray-50'>Happy Customers</span>
-            </>
-          }
           theme='light'
-          title={
-            <>
-              Focus on your <br />
-              Product
-            </>
-          }
+          title={<>Next Unicorn</>}
           subtitle={
             <>
               Full featured SAAS template <br /> built with
-              <GlowText className='bg-[#ff3059]'>Next.js</GlowText>
+              <GlowText className='bg-green-600'>Next.js</GlowText>
             </>
           }
           description={
@@ -43,18 +36,14 @@ export default function Home() {
               will deliver each and every time.
             </>
           }
-          ctaButtonClassName='px-8 py-4'
+          ctaButtonClassName='px-8 py-4 bg-black text-white hover:bg-black/90'
           ctaText='Buy this template'
-          productImage={'/people-work-2.jpg'}
+          productImage={'/spotify.png'}
+          afterProductImage='UI image is courtesy of Spotify'
         />
       </div>
 
-      <MultiFeature1 />
-
-      <Integrations />
-
-      <Logos />
-      <Testimonials />
+      <Integrations className={'bg-black'} />
 
       <PricingTable />
       <FAQs />

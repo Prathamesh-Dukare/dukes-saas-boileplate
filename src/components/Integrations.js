@@ -6,7 +6,7 @@ import GlowText from './UI/GlowText';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer'; // Import useInView
 
-export default function Integrations() {
+export default function Integrations({ className }) {
   const controls = useAnimation();
   const [ref, inView] = useInView(); // Use useInView to track if the section is in the viewport
 
@@ -40,7 +40,10 @@ export default function Integrations() {
   }, [controls, inView]);
 
   return (
-    <section className='py-8 bg-green-600 sm:py-12 lg:py-36' ref={ref}>
+    <section
+      className={`py-8 bg-green-600 sm:py-12 lg:py-36 ${className}`}
+      ref={ref}
+    >
       <div className='max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8 px-6 lg:px-8'>
         <div className='flex flex-col items-center justify-center sm:items-start space-y-6 sm:space-y-8'>
           <h3 className='text-3xl sm:text-5xl text-white font-semibold'>

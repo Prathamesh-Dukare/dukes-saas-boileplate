@@ -12,8 +12,9 @@ export default function Hero({
   ctaHref = 'https://sandeep1995.gumroad.com/l/saas-starter-pro',
   theme = 'light',
   ctaButtonClassName = '',
-  preText = 'Happy to see you here!',
+  preText = '',
   productImage,
+  afterProductImage = '',
 }) {
   return (
     <div className='relative'>
@@ -29,15 +30,17 @@ export default function Hero({
         className='px-4 py-4 mx-auto sm:px-8 lg:px-10 max-w-7xl'
       >
         <div className='w-full text-center flex flex-col items-center justify-center'>
-          <p
-            className={`bg-transparent border rounded p-2 font-thin text-sm my-2 ${
-              theme === 'light'
-                ? 'text-white text-shadow shadow-gray-900'
-                : 'text-gray-900'
-            }`}
-          >
-            {preText}
-          </p>
+          {preText ? (
+            <p
+              className={`bg-transparent border rounded p-2 font-thin text-sm my-2 ${
+                theme === 'light'
+                  ? 'text-white text-shadow shadow-gray-900'
+                  : 'text-gray-900'
+              }`}
+            >
+              {preText}
+            </p>
+          ) : null}
           <h1
             className={`text-4xl font-bold sm:text-7xl lg:text-8xl  ${
               theme === 'light'
@@ -85,7 +88,7 @@ export default function Hero({
             visible: { opacity: 1, scale: 1 },
             hidden: { opacity: 0, scale: 0.5 },
           }}
-          className='flex flex-col items-center justify-center'
+          className='flex flex-col items-center justify-center p-4 sm:p-8 lg:p-10 max-w-7xl mx-auto'
         >
           <Image
             quality={100}
@@ -96,9 +99,11 @@ export default function Hero({
             alt='UI image courtesy of ChartMogul'
           />
 
-          <span className='text-xs text-center mx-auto text-white'>
-            UI image courtesy of ChartMogul
-          </span>
+          {afterProductImage && (
+            <span className='text-xs text-center mx-auto text-white'>
+              {afterProductImage}
+            </span>
+          )}
         </motion.div>
       ) : null}
     </div>

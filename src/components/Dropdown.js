@@ -12,14 +12,15 @@ export default function DropDown({
     { name: 'Home 1', href: '/' },
     { name: 'Home 2', href: '/company' },
     { name: 'Home 3', href: '/product' },
-    { name: 'Home 4', href: '/services/data-analytics' },
+    { name: 'Two Cols Landing', href: '/services/data-analytics' },
+    { name: 'Video Back', href: '/landing-2' },
   ],
 }) {
   return (
     <Menu as='div' className='relative inline-block text-left'>
       <div>
         <Menu.Button className='inline-flex w-full items-center justify-center gap-x-1.5 rounded-md px-3 py-2 text-base font-semibold transition-all duration-200 hover:text-opacity-80'>
-          Landing Pages
+          Pages
           <ChevronDownIcon className='-mr-1 h-4 w-4' aria-hidden='true' />
         </Menu.Button>
       </div>

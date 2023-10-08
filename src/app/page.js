@@ -35,7 +35,7 @@ export default function Home() {
           }
           subtitle={
             <>
-              This can be your <GlowText>Brand</GlowText>
+              This can be your <GlowText className='bg-black'>Brand</GlowText>
             </>
           }
           description={
@@ -49,6 +49,7 @@ export default function Home() {
           ctaButtonClassName='px-8 py-4'
           ctaText='Get this template'
           productImage={'/product.png'}
+          afterProductImage='UI image courtesy of ChartMogul'
         />
       </div>
       <Logos />
