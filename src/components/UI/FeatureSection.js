@@ -108,12 +108,9 @@ export default function FeatureSection({
             {videoSrcURL ? (
               <VideoPlayer videoSrcURL={videoSrcURL} poster={poster} />
             ) : (
-              <Image
-                width={3840 / 2}
-                height={2880 / 2}
-                src={poster}
-                alt='Demo'
-              />
+              <div className='w-full rounded shadow-2xl object-cover object-center'>
+                <Image fill src={poster} alt='Demo' className='w-full h-full' />
+              </div>
             )}
           </motion.div>
         </div>

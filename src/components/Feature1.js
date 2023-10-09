@@ -36,6 +36,7 @@ export default function Feature1() {
       bg={'bg-gray-50'}
       preheaderTextColor={'text-green-600'}
       ctaText='Start my free trial'
+      poster='/people-work.jpg'
     />
   );
 }

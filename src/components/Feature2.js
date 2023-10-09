@@ -35,6 +35,7 @@ export default function Feature2() {
       bg={'bg-white'}
       preheaderTextColor={'text-gray-600'}
       ctaText='Start my free trial'
+      poster='/product.png'
     />
   );
 }
