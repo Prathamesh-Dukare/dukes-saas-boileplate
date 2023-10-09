@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <>
       <div className='relative min-h-[20vh] pb-4 sm:pb-6 xl:pb-12'>
-        <Background className={'bg-black'} imgSrc={'/cool-background.png'} />
+        <Background className={'bg-gray-50'} imgSrc={'/cool-background.png'} />
         <Nav theme={'dark'} navHeaderClassName='text-gray-950' />
         <Hero
           theme='dark'
