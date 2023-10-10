@@ -5,34 +5,34 @@ import { motion } from 'framer-motion';
 
 const faqs = [
   {
-    question: 'What is Netflix?',
+    question: 'What is NanoDevPro?',
     answer:
-      'Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.',
+      'NanoDevPro is a cutting-edge tech company that provides a wide range of innovative solutions, including software development, cloud computing, and AI services to businesses and individuals.',
   },
   {
-    question: 'Can I cancel my subscription?',
+    question: 'Can I change my subscription plan?',
     answer:
-      'Of course! You can cancel your plan at any time. There are no cancellation fees, though no refunds are provided for prorated periods.',
+      'Absolutely! You have the flexibility to upgrade or downgrade your subscription plan at any time. We want to ensure that our services meet your evolving needs.',
   },
   {
-    question: 'What can I watch on Netflix?',
+    question: 'What can I access on NanoDevPro?',
     answer:
-      'Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals, and more. Watch as much as you want, any time you want.',
+      'NanoDevPro offers an extensive collection of resources, including tutorials, coding challenges, tech articles, and exclusive tech content created by our expert team. Explore and learn at your own pace.',
   },
   {
-    question: 'Is Netflix good for kids?',
+    question: 'Is NanoDevPro suitable for beginners?',
     answer:
-      'The Netflix Kids experience is included in your membership to give parents control while kids enjoy family-friendly TV shows and movies in their own space.',
+      'Certainly! NanoDevPro provides a beginner-friendly learning environment, with step-by-step guides and courses tailored to those just starting their tech journey.',
   },
   {
-    question: 'May I share my account?',
+    question: 'How many devices can I use with my account?',
     answer:
-      'Netflix offers a variety of plans to meet your needs. The plan you choose will determine the number of devices that you can watch Netflix on at the same time.',
+      'NanoDevPro offers various subscription plans with different device limits. You can choose the plan that suits your needs, allowing you to access our services on multiple devices simultaneously.',
   },
   {
-    question: 'How do I cancel?',
+    question: 'How can I cancel my subscription?',
     answer:
-      'Netflix is flexible. There are no pesky contracts and no commitments. You can easily cancel your account online in two clicks. There are no cancellation fees, though no refunds are provided for prorated periods.',
+      'We make it easy for you to manage your subscription. You can cancel your NanoDevPro subscription with a few clicks in your account settings. No long-term commitments or cancellation fees!',
   },
 ];
 
