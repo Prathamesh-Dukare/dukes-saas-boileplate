@@ -110,12 +110,13 @@ export default function Hero({
           className='flex flex-col items-center justify-center p-4 sm:p-8 lg:p-10 max-w-7xl mx-auto'
         >
           <Image
-            quality={100}
+            quality={75}
             width={1200}
             height={800}
             className='w-[80vw] mx-auto rounded-md'
             src={productImage}
             alt='UI image courtesy of ChartMogul'
+            loading='eager'
           />
 
           {afterProductImage && (
@@ -123,7 +124,7 @@ export default function Hero({
               className={`text-xs text-center mx-auto ${
                 theme === 'light'
                   ? 'text-shadow shadow-gray-900 text-white'
-                  : 'text-gray-900 text-gray-950'
+                  : 'text-gray-950'
               }`}
             >
               {afterProductImage}
