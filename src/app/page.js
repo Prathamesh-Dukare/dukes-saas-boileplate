@@ -18,7 +18,7 @@ export default function Home() {
     <>
       <Nav theme={'light'} />
       <div className='relative min-h-[20vh] py-4 sm:py-6 xl:py-12'>
-        <Background className={'bg-green-900'} />
+        <Background className={'bg-gray-950'} />
 
         <Hero
           preText={
@@ -30,19 +30,18 @@ export default function Home() {
           theme='light'
           title={
             <>
-              Build your dream <br />
-              SAAS today
+              Not just another <br /> Landing Page
             </>
           }
           subtitle={
             <>
-              This can be your <GlowText className='bg-black'>Brand</GlowText>
+              Grab first <GlowText>attention</GlowText>
             </>
           }
           description={
             <>
-              Crafted to Perfection. <br />
-              <span className='font-bold'>Next.js</span> SAAS Template featuring{' '}
+              Crafted to Perfection. <span className='font-bold'>Next.js</span>{' '}
+              SAAS Template featuring <br />
               <span className='font-bold'>TailwindCSS</span> and{' '}
               <span className='font-bold'>Framer Motion</span>
             </>

@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <>
       <div className='relative min-h-[20vh] pb-4 sm:pb-6 xl:pb-12'>
-        <Background className={'bg-[#181a1b]'} />
+        <Background className={'bg-green-800'} />
         <Nav theme={'light'} navHeaderClassName='bg-transparent text-white' />
         <Hero
           preText={
@@ -33,7 +33,7 @@ export default function Home() {
           subtitle={
             <>
               Full featured SAAS template <br /> built with
-              <GlowText className='bg-[#ff3059]'>Next.js</GlowText>
+              <GlowText>Next.js</GlowText>
             </>
           }
           description={

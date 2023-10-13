@@ -7,7 +7,7 @@ import Image from 'next/image';
 import DropDown from './Dropdown';
 
 export default function Nav({
-  navHeaderClassName = 'bg-green-900 text-white',
+  navHeaderClassName = 'bg-gray-950 text-white',
   theme = 'light',
   buttonClassName = '',
 }) {
