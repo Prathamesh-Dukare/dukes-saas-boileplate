@@ -45,7 +45,7 @@ export default function Blogs() {
                   key={index}
                   className='max-w-prose mx-auto rounded-lg bg-white overflow-hidden p-2'
                 >
-                  <div className='flex w-full rounded-lg overflow-hidden hover:scale-105 transition-all duration-200'>
+                  <div className='flex w-full rounded overflow-hidden hover:scale-105 transition-all duration-200'>
                     <Image
                       className='object-cover object-center w-full h-36 sm:h-64'
                       src={`https://picsum.photos/seed/${article.slug}/800/600`}

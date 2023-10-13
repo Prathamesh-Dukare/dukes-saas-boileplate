@@ -17,7 +17,7 @@ export default function BlogDetails({ article }) {
       className='sm:pt-10 lg:pt-16'
     >
       <div className='px-4 mx-auto max-w-4xl sm:px-6 lg:px-8'>
-        <div className='grid items-center text-center justify-center gap-6 sm:gap-10 grid-cols-1'>
+        <div className='grid items-center sm:text-center justify-center gap-6 sm:gap-10 grid-cols-1 mt-2 max-w-prose mx-auto'>
           <h1 className='text-3xl font-bold text-gray-950 sm:text-5xl lg:text-6xl'>
             {article.title}
           </h1>
@@ -25,13 +25,13 @@ export default function BlogDetails({ article }) {
             <Image
               width={1200}
               height={800}
-              className='w-full max-w-3xl rounded-xl'
+              className='w-full max-w-full rounded'
               src={`https://picsum.photos/seed/${article.slug}/1200/800`}
               alt={article.title}
             />
           </div>
 
-          <div className='flex justify-center items-center mt-4'>
+          <div className='flex sm:justify-center items-center mt-4'>
             <div className='w-12 h-12 rounded-full object-cover mr-4'>
               <Image
                 src={`https://i.pravatar.cc/64?u=${article.author}`}
@@ -53,7 +53,7 @@ export default function BlogDetails({ article }) {
               </div>
             </div>
           </div>
-          <p className='text-base font-semibold text-gray-700 sm:text-xl max-w-prose'>
+          <p className='text-base font-semibold text-gray-700 sm:text-xl  bg-gray-50 p-4 rounded'>
             {article.description}
           </p>
         </div>

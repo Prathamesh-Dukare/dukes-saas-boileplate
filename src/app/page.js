@@ -30,24 +30,26 @@ export default function Home() {
           theme='light'
           title={
             <>
-              Not just another <br /> Landing Page
+              Take your SAAS <br />
+              to Next Level
             </>
           }
           subtitle={
             <>
-              Grab first <GlowText>attention</GlowText>
+              Grab the <GlowText>Attention!</GlowText>
             </>
           }
           description={
             <>
-              Crafted to Perfection. <span className='font-bold'>Next.js</span>{' '}
-              SAAS Template featuring <br />
+              Engineered to Perfection. Premium{' '}
+              <span className='font-bold'>Next.js</span> SAAS Template featuring{' '}
+              <br />
               <span className='font-bold'>TailwindCSS</span> and{' '}
               <span className='font-bold'>Framer Motion</span>
             </>
           }
           ctaButtonClassName='px-8 py-4'
-          ctaText='Get this template'
+          ctaText='Buy Now at $17.99'
           productImage={'/product.png'}
           afterProductImage='UI image courtesy of ChartMogul'
         />

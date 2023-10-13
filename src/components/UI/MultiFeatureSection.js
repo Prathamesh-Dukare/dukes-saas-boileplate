@@ -92,7 +92,7 @@ export default function MultiFeatureSection({
                       <div className='p-4 rounded-md bg-gray-50'>
                         <cta.icon className='w-4 h-4' />
                       </div>
-                      <span className='text-gray-950 font-semibold text-sm'>
+                      <span className='text-gray-950 font-semibold text-sm hover:underline underline-offset-4'>
                         {cta.text}
                       </span>
                     </div>

@@ -26,7 +26,7 @@ export default function Nav({
                 alt='Logo'
               />
               <span className='font-bold underline-offset-4 underline'>
-                SAAS Starter
+                SAAS Starter Pro
               </span>
             </Link>
           </div>
@@ -106,13 +106,14 @@ export default function Nav({
             <CTA
               className={buttonClassName}
               blackTheme={theme === 'dark'}
-              ctaText='Buy Template'
+              ctaText='Purchase $17.99'
             />
           </div>
         </div>
 
         {isMenuOpen && (
           <div className='flex flex-col items-center justify-center space-y-4 pb-2'>
+            <DropDown />
             <Link
               href='/company'
               title='company'
@@ -159,7 +160,7 @@ export default function Nav({
             <CTA
               className={buttonClassName}
               blackTheme={theme === 'dark'}
-              ctaText='Buy Template'
+              ctaText='Buy now - $17.99'
             />
           </div>
         )}
