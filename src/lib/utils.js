@@ -1,3 +1,22 @@
+const demoArticle = `
+<p>Search Engine Optimization (SEO) is a powerful tool for businesses looking to increase their online visibility and drive sales. In this article, we will explore the various strategies and techniques that can be employed to leverage SEO for boosting sales.</p>
+<h2>Understanding SEO</h2>
+<p><a href="https://docswrite.com"> SEO involves optimizing</a> your website's content and structure to rank higher on search engine results pages (SERPs). This not only increases organic traffic but also enhances the quality of that traffic. To effectively use SEO for sales, you need to start with a solid understanding of how it works.</p>
+<h2>Keyword Research</h2>
+<p>One of the fundamental aspects of SEO is keyword research. Identify keywords and phrases that potential customers are likely to search for when looking for products or services like yours. Use tools like Google Keyword Planner to find relevant keywords and incorporate them into your website's content.</p>
+<h2>On-Page SEO</h2>
+<p>Optimize your website's on-page elements, including title tags, meta descriptions, header tags, and content, with your chosen keywords. Ensure that your website is user-friendly, mobile-responsive, and loads quickly, as these factors can impact your search engine rankings and user experience.</p>
+<h2>Content Marketing</h2>
+<p>Create high-quality, informative, and engaging content that addresses the needs and interests of your target audience. Regularly update your blog with relevant articles, guides, and other content that not only attracts visitors but also establishes your authority in your industry.</p>
+<h2>Link Building</h2>
+<p>Build <a href="https://docswrite.com"> a strong backlink profile</a> by acquiring high-quality inbound links from reputable websites in your niche. Guest posting, outreach, and creating shareable content are some effective link-building strategies that can improve your website's authority and trustworthiness in the eyes of search engines.</p>
+<h2>Local SEO</h2>
+<p>If you have a physical storefront or serve a specific geographical area, optimize your website for local SEO. Claim and verify your Google My Business listing, encourage customer reviews, and ensure that your business information is consistent across online directories.</p>
+<h2>Monitoring and Analytics</h2>
+<p>Regularly monitor your website's performance using tools like Google Analytics and Google Search Console. Track your keyword rankings, organic traffic, and conversion rates. Use this data to make informed decisions and continually improve your SEO strategy.</p>
+<p>Search Engine Optimization is a dynamic field, and staying up-to-date with the latest trends and algorithms is crucial. By implementing effective SEO strategies, businesses can significantly increase their online visibility, attract more qualified leads, and ultimately drive sales.</p>
+`;
+
 export const services = [
   {
     id: 1,
@@ -53,36 +72,9 @@ export const articles = [
     description:
       'Search Engine Optimization (SEO) is a powerful tool for businesses looking to increase their online visibility and drive sales.',
     category: 'SEO',
-    content: `
-
-        <p>Search Engine Optimization (SEO) is a powerful tool for businesses looking to increase their online visibility and drive sales. In this article, we will explore the various strategies and techniques that can be employed to leverage SEO for boosting sales.</p>
-
-        <h2>Understanding SEO</h2>
-        <p><a href="https://docswrite.com"> SEO involves optimizing</a> your website's content and structure to rank higher on search engine results pages (SERPs). This not only increases organic traffic but also enhances the quality of that traffic. To effectively use SEO for sales, you need to start with a solid understanding of how it works.</p>
-
-        <h2>Keyword Research</h2>
-        <p>One of the fundamental aspects of SEO is keyword research. Identify keywords and phrases that potential customers are likely to search for when looking for products or services like yours. Use tools like Google Keyword Planner to find relevant keywords and incorporate them into your website's content.</p>
-
-        <h2>On-Page SEO</h2>
-        <p>Optimize your website's on-page elements, including title tags, meta descriptions, header tags, and content, with your chosen keywords. Ensure that your website is user-friendly, mobile-responsive, and loads quickly, as these factors can impact your search engine rankings and user experience.</p>
-
-        <h2>Content Marketing</h2>
-        <p>Create high-quality, informative, and engaging content that addresses the needs and interests of your target audience. Regularly update your blog with relevant articles, guides, and other content that not only attracts visitors but also establishes your authority in your industry.</p>
-
-        <h2>Link Building</h2>
-        <p>Build <a href="https://docswrite.com"> a strong backlink profile</a> by acquiring high-quality inbound links from reputable websites in your niche. Guest posting, outreach, and creating shareable content are some effective link-building strategies that can improve your website's authority and trustworthiness in the eyes of search engines.</p>
-
-        <h2>Local SEO</h2>
-        <p>If you have a physical storefront or serve a specific geographical area, optimize your website for local SEO. Claim and verify your Google My Business listing, encourage customer reviews, and ensure that your business information is consistent across online directories.</p>
-
-        <h2>Monitoring and Analytics</h2>
-        <p>Regularly monitor your website's performance using tools like Google Analytics and Google Search Console. Track your keyword rankings, organic traffic, and conversion rates. Use this data to make informed decisions and continually improve your SEO strategy.</p>
-
- 
-        <p>Search Engine Optimization is a dynamic field, and staying up-to-date with the latest trends and algorithms is crucial. By implementing effective SEO strategies, businesses can significantly increase their online visibility, attract more qualified leads, and ultimately drive sales.</p>
-    `,
-    author: 'Sophia Doe',
-    date: 'May 23, 2021',
+    content: demoArticle,
+    author: 'John Doe',
+    date: 'Jan 11, 2025',
   },
   {
     title: 'New ways to improve your customer experience',
@@ -90,36 +82,29 @@ export const articles = [
     description:
       'New ways to improve your customer experience. In this article, we will explore the various strategies and techniques that can be employed to leverage SEO for boosting sales.',
     category: 'SEO',
-    content: `
-
-        <p>Search Engine Optimization (SEO) is a powerful tool for businesses looking to increase their online visibility and drive sales. In this article, we will explore the various strategies and techniques that can be employed to leverage SEO for boosting sales.</p>
-
-        <h2>Understanding SEO</h2>
-        <p>SEO involves optimizing your <a href="https://docswrite.com"> website's content</a> and structure to rank higher on search engine results pages (SERPs). This not only increases organic traffic but also enhances the quality of that traffic. To effectively use SEO for sales, you need to start with a solid understanding of how it works.</p>
-
-        <h2>Keyword Research</h2>
-        <p>One of the fundamental aspects of SEO is keyword research. Identify keywords and phrases that potential customers are likely to search for when looking for products or services like yours. Use tools like Google Keyword Planner to find relevant keywords and incorporate them into your website's content.</p>
-
-        <h2>On-Page SEO</h2>
-        <p>Optimize your website's on-page elements, including title tags, meta descriptions, header tags, and content, with your chosen keywords. Ensure that your website is user-friendly, mobile-responsive, and loads quickly, as these factors can impact your search engine rankings and user experience.</p>
-
-        <h2>Content Marketing</h2>
-        <p>Create high-quality, informative, and engaging content that addresses the needs and interests of your target audience. Regularly update your blog with relevant articles, guides, and other content that not only attracts visitors but also establishes your authority in your industry.</p>
-
-        <h2>Link Building</h2>
-        <p>Build a strong backlink profile by acquiring high-quality inbound links from reputable websites in your niche. Guest posting, outreach, and creating shareable content are some effective link-building strategies that can improve your website's authority and trustworthiness in the eyes of search engines.</p>
-
-        <h2>Local SEO</h2>
-        <p>If you have a physical storefront or serve a specific geographical area, optimize your website for local SEO. Claim and verify your Google My Business listing, encourage customer reviews, and ensure that your business information is consistent across online directories.</p>
-
-        <h2>Monitoring and Analytics</h2>
-        <p>Regularly monitor your website's <a href="https://esyblog.com">performance using tools</a> like Google Analytics and Google Search Console. Track your keyword rankings, organic traffic, and conversion rates. Use this data to make informed decisions and continually improve your SEO strategy.</p>
-
- 
-        <p>Search Engine Optimization is a dynamic field, and staying up-to-date with the latest trends and algorithms is crucial. By implementing effective SEO strategies, businesses can significantly increase their online visibility, attract more qualified leads, and ultimately drive sales.</p>
-    `,
-    author: 'Argha Das',
+    content: demoArticle,
+    author: 'Dr Lalita Mark',
     date: 'May 23, 2021',
+  },
+  {
+    title: 'The Role of JavaScript in Modern Web Development',
+    slug: 'role-of-javascript-in-modern-web-development',
+    description:
+      'JavaScript plays a crucial role in modern web development, enabling dynamic and interactive web applications.',
+    category: 'Web Development',
+    content: demoArticle,
+    author: 'Alice Smith',
+    date: 'Oct 5, 2023',
+  },
+  {
+    title: 'Building Scalable Node.js Applications',
+    slug: 'building-scalable-nodejs-applications',
+    description:
+      'Learn how to design and develop scalable Node.js applications to handle high traffic and user loads.',
+    category: 'Node.js',
+    content: demoArticle,
+    author: 'Bob Johnson',
+    date: 'Jul 14, 2024',
   },
 ];
 

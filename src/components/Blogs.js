@@ -59,7 +59,7 @@ export default function Blogs() {
                     <h3 className='text-lg leading-6 font-medium text-gray-900'>
                       {article.title}
                     </h3>
-                    <p className='mt-4 text-base text-gray-500'>
+                    <p className='mt-4 text-sm text-gray-500'>
                       {article.description}
                     </p>
                     <div className='flex items-center mt-4'>
@@ -87,6 +87,74 @@ export default function Blogs() {
             })}
           </motion.div>
         </div>
+
+        <motion.div
+          initial='hidden'
+          whileInView='visible'
+          viewport={{ once: true }}
+          variants={{
+            visible: { opacity: 1, translateY: 0 },
+            hidden: { opacity: 0, translateY: 100 },
+          }}
+          transition={{ duration: 0.2 }}
+          className='grid grid-cols-1 gap-4 sm:gap-6 sm:grid-cols-2 py-4 sm:py-8 w-full'
+        >
+          <div className='col-span-2 flex flex-col items-center justify-center gap-4 my-4'>
+            <h1 className='text-2xl font-bold sm:text-5xl lg:text-6xl text-gray-900'>
+              Random stuff
+            </h1>
+            <h2 className='relative mt-6 text-xl font-bold sm:text-3xl lg:text-4xl text-gray-700'>
+              These <GlowText>Stories</GlowText> make us proud
+            </h2>
+          </div>
+          {articles.map((article, index) => {
+            return (
+              <Link
+                href={`/blog/${article.slug}`}
+                key={`abc-${index}`}
+                className='mx-auto rounded-lg bg-white p-2 grid sm:grid-cols-2 gap-4 z-20'
+              >
+                <div className='flex w-full rounded overflow-hidden hover:scale-105 transition-all duration-200'>
+                  <Image
+                    className='object-cover object-center w-full h-full sm:h-full'
+                    src={`https://picsum.photos/seed/${article.slug}/800/600`}
+                    alt={article.title}
+                    width={800}
+                    height={600}
+                  />
+                </div>
+
+                <div className='p-2'>
+                  <h3 className='text-lg leading-6 font-medium text-gray-900'>
+                    {article.title}
+                  </h3>
+                  <p className='mt-4 text-sm text-gray-500'>
+                    {article.description}
+                  </p>
+                  <div className='flex items-center mt-4'>
+                    <div className='w-12 h-12 rounded-full object-cover mr-4'>
+                      <Image
+                        src={`https://i.pravatar.cc/64?u=${article.author}`}
+                        alt={article.author}
+                        width={64}
+                        height={64}
+                        className='rounded-full object-cover'
+                      />
+                    </div>
+                    <div className='flex flex-col'>
+                      <h2 className='text-md sm:text-lg font-bold text-gray-800'>
+                        {article.author}
+                      </h2>
+                      <p className='text-gray-500 text-xs sm:text-sm'>
+                        {article.date}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </Link>
+            );
+          })}
+        </motion.div>
       </div>
     </div>
   );
