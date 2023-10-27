@@ -106,7 +106,7 @@ export default function Nav({
             <CTA
               className={buttonClassName}
               blackTheme={theme === 'dark'}
-              ctaText='Purchase $17.99'
+              ctaText='Purchase'
             />
           </div>
         </div>
