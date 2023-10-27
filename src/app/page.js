@@ -49,7 +49,7 @@ export default function Home() {
             </>
           }
           ctaButtonClassName='px-8 py-4'
-          ctaText='Buy Now at $17.99'
+          ctaText='Get it now'
           productImage={'/product.png'}
           afterProductImage='UI image courtesy of ChartMogul'
         />
